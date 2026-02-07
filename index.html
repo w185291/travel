@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>誠品樂遊中華 | 兩岸高端落地遊 | 雲之南 ． 麗江．大理．香格里拉．瀘沽湖 9日深度遊</title>
+    <link rel="icon" href="assets/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: ["class"],
+            theme: {
+                container: {
+                    center: true,
+                    padding: "2rem",
+                    screens: {
+                        "2xl": "1400px",
+                    },
+                },
+                extend: {
+                    colors: {
+                        border: "hsl(var(--border))",
+                        input: "hsl(var(--input))",
+                        ring: "hsl(var(--ring))",
+                        background: "hsl(var(--background))",
+                        foreground: "hsl(var(--foreground))",
+                        primary: {
+                            DEFAULT: "hsl(var(--primary))",
+                            foreground: "hsl(var(--primary-foreground))",
+                        },
+                        secondary: {
+                            DEFAULT: "hsl(var(--secondary))",
+                            foreground: "hsl(var(--secondary-foreground))",
+                        },
+                        destructive: {
+                            DEFAULT: "hsl(var(--destructive))",
+                            foreground: "hsl(var(--destructive-foreground))",
+                        },
+                        muted: {
+                            DEFAULT: "hsl(var(--muted))",
+                            foreground: "hsl(var(--muted-foreground))",
+                        },
+                        accent: {
+                            DEFAULT: "hsl(var(--accent))",
+                            foreground: "hsl(var(--accent-foreground))",
+                        },
+                        popover: {
+                            DEFAULT: "hsl(var(--popover))",
+                            foreground: "hsl(var(--popover-foreground))",
+                        },
+                        card: {
+                            DEFAULT: "hsl(var(--card))",
+                            foreground: "hsl(var(--card-foreground))",
+                        },
+                    },
+                    borderRadius: {
+                        lg: "var(--radius)",
+                        md: "calc(var(--radius) - 2px)",
+                        sm: "calc(var(--radius) - 4px)",
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="bg-background text-foreground">
+
+    <div id="root">
+        <nav class="bg-white/95 backdrop-blur-md shadow-md fixed w-full z-50 transition-all duration-300" id="navbar">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-20">
+                    <div class="flex items-center">
+                        <a href="#" class="flex-shrink-0 flex items-center gap-2">
+                            <i class="fa-solid fa-earth-asia text-emerald-800 text-3xl"></i>
+                            <div>
+                                <span
+                                    class="font-serif font-bold text-2xl text-gray-900 tracking-wider block">誠品樂遊中華</span>
+                                <span class="text-xs text-gray-500 tracking-widest uppercase hidden sm:block">Luxury
+                                    Land Tour</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-4 lg:space-x-6">
+                        <a href="#lijiang"
+                            class="text-sky-600 hover:text-sky-800 font-bold transition flex items-center gap-1 text-sm lg:text-base">
+                            <i class="fa-solid fa-water"></i> 麗江
+                        </a>
+                        <a href="#dali"
+                            class="text-cyan-700 hover:text-cyan-900 font-bold transition flex items-center gap-1 text-sm lg:text-base">
+                            <i class="fa-solid fa-mountain-sun"></i> 大理
+                        </a>
+                        <a href="#shangrila"
+                            class="text-gray-600 hover:text-emerald-800 font-medium transition flex items-center gap-1 text-sm lg:text-base">
+                            <i class="fa-solid fa-cloud"></i> 香格里拉
+                        </a>
+                        <a href="#lugulake"
+                            class="text-rose-700 hover:text-rose-900 font-bold transition flex items-center gap-1 text-sm lg:text-base">
+                            <i class="fa-solid fa-sailboat"></i> 瀘沽湖
+                        </a>
+                        <a href="#trust"
+                            class="text-gray-600 hover:text-emerald-800 font-medium transition text-sm lg:text-base">服務保證</a>
+                        <a href="https://lin.ee/LC0Nuwn" target="_blank"
+                            class="bg-line text-white px-4 py-2 rounded-full font-bold hover:bg-green-600 transition shadow-lg flex items-center gap-2 text-sm lg:text-base">
+                            <i class="fa-brands fa-line text-xl"></i> 免費諮詢
+                        </a>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="flex items-center md:hidden">
+                        <button id="mobile-menu-btn" class="text-gray-600 hover:text-emerald-800 focus:outline-none">
+                            <i class="fa-solid fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 top-20 shadow-lg">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#lijiang"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-sky-700 hover:text-sky-800 hover:bg-sky-50">麗江古城</a>
+                    <a href="#dali"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-cyan-700 hover:text-cyan-800 hover:bg-cyan-50">大理洱海</a>
+                    <a href="#shangrila"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-emerald-800 hover:bg-gray-50">香格里拉</a>
+                    <a href="#lugulake"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-rose-700 hover:text-rose-800 hover:bg-rose-50">神祕瀘沽湖</a>
+                    <a href="#trust"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-emerald-800 hover:bg-gray-50">服務保證</a>
+                    <a href="https://lin.ee/LC0Nuwn" target="_blank" class="block px-3 py-2 text-[#06C755] font-bold">
+                        <i class="fa-brands fa-line"></i> 點擊加 LINE 諮詢
+                    </a>
+                    <a href="https://roaring-sawine-ab8012.netlify.app/"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-emerald-800 hover:bg-gray-50">重慶之旅</a>
+                </div>
+            </div>
+        </nav>
+        <div class="min-h-screen bg-slate-50 font-sans text-slate-900 pb-20 pt-20">
+            <header class="relative h-80 md:h-[450px] overflow-hidden bg-slate-900">
+                <div class="absolute inset-0 opacity-60"><img
+                        src="https://images.unsplash.com/photo-1527685609591-44b0aef2400b?auto=format&amp;fit=crop&amp;q=80&amp;w=2000"
+                        alt="雲南風景" class="w-full h-full object-cover"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-slate-900/90"></div>
+                <div class="relative z-10 h-full flex flex-col justify-center items-center text-white px-4 text-center">
+                    <h1
+                        class="hidden md:block text-5xl md:text-7xl font-bold mb-4 tracking-[0.2em] drop-shadow-xl text-white">
+                        誠品樂遊中華
+                    </h1>
+                    <div class="w-24 h-1.5 bg-emerald-500 mb-8 shadow-lg"></div>
+                    <p class="text-2xl md:text-4xl font-bold mb-3 tracking-wide text-white drop-shadow-md">兩岸高端落地遊</p>
+                    <p class="text-lg md:text-2xl font-medium mb-8 tracking-wide text-slate-100 drop-shadow-md">彩雲之南 ．
+                        麗江．大理．香格里拉．瀘沽湖 9日深度遊</p>
+                    <div class="flex flex-wrap justify-center gap-4 text-sm md:text-base font-medium"><span
+                            class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-md border border-white/20 text-white"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-calendar" aria-hidden="true">
+                                <path d="M8 2v4"></path>
+                                <path d="M16 2v4"></path>
+                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                <path d="M3 10h18"></path>
+                            </svg> 2025/03/02 - 03/10</span><span
+                            class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-md border border-white/20 text-white"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-map-pin" aria-hidden="true">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                </path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg> 雲南全境深度探索</span></div>
+                </div>
+            </header>
+            <main class="max-w-5xl mx-auto px-4 relative z-20 md:-mt-10">
+                <div class="space-y-12">
+                    <div class="flex flex-col md:flex-row gap-6 group">
+                        <div class="md:w-32 flex flex-row md:flex-col items-center md:items-end gap-2 md:pt-4">
+                            <div class="text-emerald-600 font-black text-3xl md:text-4xl tracking-tighter">3/2</div>
+                            <div
+                                class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                                Day 01
+                            </div>
+                        </div>
+                        <div id="lijiang"
+                            class="flex-1 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                            <div class="flex flex-col lg:flex-row min-h-[450px]">
+                                <div
+                                    class="lg:w-2/5 relative bg-slate-100 overflow-hidden h-64 lg:h-auto lg:min-h-full">
+                                    <img src="assets/1.jpg" alt="Day 1 Image"
+                                        class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                                    <div
+                                        class="absolute top-4 left-4 bg-black/40 backdrop-blur-md text-white px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 border border-white/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hotel"
+                                            aria-hidden="true">
+                                            <path d="M10 22v-6.57"></path>
+                                            <path d="M12 11h.01"></path>
+                                            <path d="M12 7h.01"></path>
+                                            <path d="M14 15.43V22"></path>
+                                            <path d="M15 16a5 5 0 0 0-6 0"></path>
+                                            <path d="M16 11h.01"></path>
+                                            <path d="M16 7h.01"></path>
+                                            <path d="M8 11h.01"></path>
+                                            <path d="M8 7h.01"></path>
+                                            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                                        </svg>
+                                        麗江
+                                    </div>
+                                </div>
+                                <div class="lg:w-3/5 p-4 lg:p-8 flex flex-col justify-between">
+                                    <div>
+                                        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-800 leading-tight">
+                                            抵達麗江．高原啟程</h2>
+                                        <div
+                                            class="flex items-start gap-3 mb-6 p-4 bg-emerald-50/50 rounded-2xl border border-emerald-100/50">
+                                            <div class="bg-white p-2 rounded-full shadow-sm text-emerald-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-plane" aria-hidden="true">
+                                                    <path
+                                                        d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <p
+                                                    class="text-[10px] uppercase font-bold text-emerald-600/60 tracking-widest mb-0.5">
+                                                    交通路線 / 途經</p>
+                                                <p class="font-semibold text-slate-700 text-sm md:text-base">台北 - 香港 -
+                                                    麗江</p>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-6">
+                                            <p
+                                                class="text-slate-600 leading-relaxed text-sm md:text-base italic border-l-4 border-emerald-500/30 pl-4">
+                                                "從台北出發，經香港轉機抵達雲南的明珠——麗江。麗江古城擁有 800
+                                                多年歷史，是絲綢之路與茶馬古道的重要樞紐。入住後可先在納西族的青石板路上漫步，感受家家流水、戶戶垂柳的悠閒氣息，並在靜謐的古鎮氛圍中，讓身體逐步適應海拔
+                                                2400 米的高原環境。"</p>
+                                            <div class="space-y-4">
+                                                <p
+                                                    class="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-clock" aria-hidden="true">
+                                                        <circle cx="12" cy="12" r="10"></circle>
+                                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                                    </svg>
+                                                    今日行程亮點
+                                                </p>
+                                                <div class="grid grid-cols-1 gap-4">
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>抵達麗江三義機場：落地即見蒼翠山巒，呼吸第一口高原清甜空氣，準備展開這場夢幻的朝聖之旅。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>古城入住休息：下榻具有納西族風格的特色客棧，感受木結構建築的古樸與時光沉澱的溫潤美感。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>適應高原海拔：放慢您的腳步，品一壺正宗普洱茶，讓身體在午後陽光中逐步適應迷人的高原節奏。</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 group">
+                        <div class="md:w-32 flex flex-row md:flex-col items-center md:items-end gap-2 md:pt-4">
+                            <div class="text-emerald-600 font-black text-3xl md:text-4xl tracking-tighter">3/3</div>
+                            <div
+                                class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                                Day 02
+                            </div>
+                        </div>
+                        <div id="dali"
+                            class="flex-1 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                            <div class="flex flex-col lg:flex-row min-h-[450px]">
+                                <div
+                                    class="lg:w-2/5 relative bg-slate-100 overflow-hidden h-64 lg:h-auto lg:min-h-full">
+                                    <img src="assets/2.jpg" alt="Day 2 Image"
+                                        class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                                    <div
+                                        class="absolute top-4 left-4 bg-black/40 backdrop-blur-md text-white px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 border border-white/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hotel"
+                                            aria-hidden="true">
+                                            <path d="M10 22v-6.57"></path>
+                                            <path d="M12 11h.01"></path>
+                                            <path d="M12 7h.01"></path>
+                                            <path d="M14 15.43V22"></path>
+                                            <path d="M15 16a5 5 0 0 0-6 0"></path>
+                                            <path d="M16 11h.01"></path>
+                                            <path d="M16 7h.01"></path>
+                                            <path d="M8 11h.01"></path>
+                                            <path d="M8 7h.01"></path>
+                                            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                                        </svg>
+                                        大理
+                                    </div>
+                                </div>
+                                <div class="lg:w-3/5 p-4 lg:p-8 flex flex-col justify-between">
+                                    <div>
+                                        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-800 leading-tight">
+                                            大理風情．古城漫步</h2>
+                                        <div
+                                            class="flex items-start gap-3 mb-6 p-4 bg-emerald-50/50 rounded-2xl border border-emerald-100/50">
+                                            <div class="bg-white p-2 rounded-full shadow-sm text-emerald-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-plane" aria-hidden="true">
+                                                    <path
+                                                        d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <p
+                                                    class="text-[10px] uppercase font-bold text-emerald-600/60 tracking-widest mb-0.5">
+                                                    交通路線 / 途經</p>
+                                                <p class="font-semibold text-slate-700 text-sm md:text-base">麗江 - 大理拉市海
+                                                    -
+                                                    大理古城</p>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-6">
+                                            <p
+                                                class="text-slate-600 leading-relaxed text-sm md:text-base italic border-l-4 border-emerald-500/30 pl-4">
+                                                "前往「風花雪月」的大理。首先來到拉市海濕地，看候鳥與草海共舞。隨後進入大理古城，這裡背靠蒼山、面朝洱海，古城內青瓦白牆的白族建築錯落有致。走在洋人街上，您可以品嚐道地的乳扇、雕梅，感受與麗江截然不同的靜謐與文藝，沉浸在南詔古國的懷舊時光中。"
+                                            </p>
+                                            <div class="space-y-4">
+                                                <p
+                                                    class="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-clock" aria-hidden="true">
+                                                        <circle cx="12" cy="12" r="10"></circle>
+                                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                                    </svg>
+                                                    今日行程亮點
+                                                </p>
+                                                <div class="grid grid-cols-1 gap-4">
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>拉市海濕地：騎馬漫步古老的茶馬古道，看湖水平如鏡，草長鶯飛，體驗昔日馬幫的艱辛與豪情。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>大理古城漫步：在「文獻名邦」追尋南詔大理國的往昔與傳奇，親身體會白族文化的深厚精髓。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>洋人街：走訪中西文化交融的獨特街道，在民謠小店點杯飲料，享受屬於大理的慢活時光。</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 group">
+                        <div class="md:w-32 flex flex-row md:flex-col items-center md:items-end gap-2 md:pt-4">
+                            <div class="text-emerald-600 font-black text-3xl md:text-4xl tracking-tighter">3/4</div>
+                            <div
+                                class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                                Day 03
+                            </div>
+                        </div>
+                        <div
+                            class="flex-1 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                            <div class="flex flex-col lg:flex-row min-h-[450px]">
+                                <div
+                                    class="lg:w-2/5 relative bg-slate-100 overflow-hidden h-64 lg:h-auto lg:min-h-full">
+                                    <img src="assets/3.jpg" alt="Day 3 Image"
+                                        class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                                    <div
+                                        class="absolute top-4 left-4 bg-black/40 backdrop-blur-md text-white px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 border border-white/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hotel"
+                                            aria-hidden="true">
+                                            <path d="M10 22v-6.57"></path>
+                                            <path d="M12 11h.01"></path>
+                                            <path d="M12 7h.01"></path>
+                                            <path d="M14 15.43V22"></path>
+                                            <path d="M15 16a5 5 0 0 0-6 0"></path>
+                                            <path d="M16 11h.01"></path>
+                                            <path d="M16 7h.01"></path>
+                                            <path d="M8 11h.01"></path>
+                                            <path d="M8 7h.01"></path>
+                                            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                                        </svg>
+                                        麗江
+                                    </div>
+                                </div>
+                                <div class="lg:w-3/5 p-4 lg:p-8 flex flex-col justify-between">
+                                    <div>
+                                        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-800 leading-tight">
+                                            洱海之光．金梭傳奇</h2>
+                                        <div
+                                            class="flex items-start gap-3 mb-6 p-4 bg-emerald-50/50 rounded-2xl border border-emerald-100/50">
+                                            <div class="bg-white p-2 rounded-full shadow-sm text-emerald-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-plane" aria-hidden="true">
+                                                    <path
+                                                        d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <p
+                                                    class="text-[10px] uppercase font-bold text-emerald-600/60 tracking-widest mb-0.5">
+                                                    交通路線 / 途經</p>
+                                                <p class="font-semibold text-slate-700 text-sm md:text-base">大理 - 金梭島 -
+                                                    洱海 -
+                                                    麗江古鎮</p>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-6">
+                                            <p
+                                                class="text-slate-600 leading-relaxed text-sm md:text-base italic border-l-4 border-emerald-500/30 pl-4">
+                                                "搭乘擺渡船登上洱海最大的島嶼——金梭島，探索隱藏在島下的「龍宮」鐘乳石洞穴，驚嘆於大自然的鬼斧神工。特別安排觀賞非物質文化遺產「海菜花」歌舞表演，透過當地白族居民的傳統舞姿，述說著對這片純淨水源的敬畏。傍晚迎著夕陽回到麗江，感受洱海邊水天一色的極致浪漫。"
+                                            </p>
+                                            <div class="space-y-4">
+                                                <p
+                                                    class="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-clock" aria-hidden="true">
+                                                        <circle cx="12" cy="12" r="10"></circle>
+                                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                                    </svg>
+                                                    今日行程亮點
+                                                </p>
+                                                <div class="grid grid-cols-1 gap-4">
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>金梭島擺渡船：乘風破浪，近距離觸摸洱海的深邃與靈動，在碧波萬頃間感受水天一色的絕美景致。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>龍宮龍洞探秘：地底奇觀震撼視覺，鐘乳石千姿百態且色彩絢爛，彷彿誤入大自然的奇幻森林。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>海菜花表演：白族姑娘優雅演繹人與自然的和諧，看花影隨波搖曳，聽清脆歌聲在湖面迴盪。</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 group">
+                        <div class="md:w-32 flex flex-row md:flex-col items-center md:items-end gap-2 md:pt-4">
+                            <div class="text-emerald-600 font-black text-3xl md:text-4xl tracking-tighter">3/5</div>
+                            <div
+                                class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                                Day 04
+                            </div>
+                        </div>
+                        <div
+                            class="flex-1 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                            <div class="flex flex-col lg:flex-row min-h-[450px]">
+                                <div
+                                    class="lg:w-2/5 relative bg-slate-100 overflow-hidden h-64 lg:h-auto lg:min-h-full">
+                                    <img src="assets/4.jpg" alt="Day 4 Image"
+                                        class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                                    <div
+                                        class="absolute top-4 left-4 bg-black/40 backdrop-blur-md text-white px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 border border-white/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hotel"
+                                            aria-hidden="true">
+                                            <path d="M10 22v-6.57"></path>
+                                            <path d="M12 11h.01"></path>
+                                            <path d="M12 7h.01"></path>
+                                            <path d="M14 15.43V22"></path>
+                                            <path d="M15 16a5 5 0 0 0-6 0"></path>
+                                            <path d="M16 11h.01"></path>
+                                            <path d="M16 7h.01"></path>
+                                            <path d="M8 11h.01"></path>
+                                            <path d="M8 7h.01"></path>
+                                            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                                        </svg>
+                                        麗江
+                                    </div>
+                                </div>
+                                <div class="lg:w-3/5 p-4 lg:p-8 flex flex-col justify-between">
+                                    <div>
+                                        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-800 leading-tight">
+                                            神聖雪山．藍月秘境</h2>
+                                        <div
+                                            class="flex items-start gap-3 mb-6 p-4 bg-emerald-50/50 rounded-2xl border border-emerald-100/50">
+                                            <div class="bg-white p-2 rounded-full shadow-sm text-emerald-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-plane" aria-hidden="true">
+                                                    <path
+                                                        d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <p
+                                                    class="text-[10px] uppercase font-bold text-emerald-600/60 tracking-widest mb-0.5">
+                                                    交通路線 / 途經</p>
+                                                <p class="font-semibold text-slate-700 text-sm md:text-base">玉龍雪山 - 藍月谷
+                                                    -
+                                                    束河古鎮</p>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-6">
+                                            <p
+                                                class="text-slate-600 leading-relaxed text-sm md:text-base italic border-l-4 border-emerald-500/30 pl-4">
+                                                "挑戰海拔，搭乘索道登上北半球緯度最低的玉龍雪山。隨後漫步於山腳下的藍月谷，這裡的湖水富含銅離子，呈現出如蒂芙尼藍般的夢幻色澤，襯著背後的皚皚雪山，美如人間仙境。下山後轉往束河古鎮，避開人群，在茶馬古道最完整的古鎮驛站中，享受古橋、流水的片刻寧靜。"
+                                            </p>
+                                            <div class="space-y-4">
+                                                <p
+                                                    class="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-clock" aria-hidden="true">
+                                                        <circle cx="12" cy="12" r="10"></circle>
+                                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                                    </svg>
+                                                    今日行程亮點
+                                                </p>
+                                                <div class="grid grid-cols-1 gap-4">
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>玉龍雪山冰川：搭乘索道直上雲霄，親手觸摸萬年不化的晶瑩冰川，俯瞰皚皚雪峰連綿的壯麗。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>藍月谷藍色湖泊：山谷間的翠綠湖泊如寶石鑲嵌，倒映著聖潔雪山，色彩如夢似幻美如仙境。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>束河古鎮尋幽：踏著斑駁石路尋覓最安靜的角落，避開喧囂人群，享受一份難得的恬靜陽光。</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 group">
+                        <div class="md:w-32 flex flex-row md:flex-col items-center md:items-end gap-2 md:pt-4">
+                            <div class="text-emerald-600 font-black text-3xl md:text-4xl tracking-tighter">3/6</div>
+                            <div
+                                class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                                Day 05
+                            </div>
+                        </div>
+                        <div id="shangrila"
+                            class="flex-1 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                            <div class="flex flex-col lg:flex-row min-h-[450px]">
+                                <div
+                                    class="lg:w-2/5 relative bg-slate-100 overflow-hidden h-64 lg:h-auto lg:min-h-full">
+                                    <img src="assets/5.jpg" alt="Day 5 Image"
+                                        class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                                    <div
+                                        class="absolute top-4 left-4 bg-black/40 backdrop-blur-md text-white px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 border border-white/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hotel"
+                                            aria-hidden="true">
+                                            <path d="M10 22v-6.57"></path>
+                                            <path d="M12 11h.01"></path>
+                                            <path d="M12 7h.01"></path>
+                                            <path d="M14 15.43V22"></path>
+                                            <path d="M15 16a5 5 0 0 0-6 0"></path>
+                                            <path d="M16 11h.01"></path>
+                                            <path d="M16 7h.01"></path>
+                                            <path d="M8 11h.01"></path>
+                                            <path d="M8 7h.01"></path>
+                                            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                                        </svg>
+                                        香格里拉
+                                    </div>
+                                </div>
+                                <div class="lg:w-3/5 p-4 lg:p-8 flex flex-col justify-between">
+                                    <div>
+                                        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-800 leading-tight">
+                                            朝聖之旅．香格里拉</h2>
+                                        <div
+                                            class="flex items-start gap-3 mb-6 p-4 bg-emerald-50/50 rounded-2xl border border-emerald-100/50">
+                                            <div class="bg-white p-2 rounded-full shadow-sm text-emerald-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-plane" aria-hidden="true">
+                                                    <path
+                                                        d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <p
+                                                    class="text-[10px] uppercase font-bold text-emerald-600/60 tracking-widest mb-0.5">
+                                                    交通路線 / 途經</p>
+                                                <p class="font-semibold text-slate-700 text-sm md:text-base">麗江 - 虎跳峽 -
+                                                    納帕海
+                                                    - 松贊林寺 - 獨克宗古城</p>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-6">
+                                            <p
+                                                class="text-slate-600 leading-relaxed text-sm md:text-base italic border-l-4 border-emerald-500/30 pl-4">
+                                                "進入詹姆斯希爾頓筆下的「心中的日月」。在虎跳峽感受金沙江咆哮而過的震撼力量。隨後參訪松贊林寺，這座宏偉的藏傳佛教寺院依山而建，金碧輝煌的屋頂在陽光下熠熠生輝，被譽為「小布達拉宮」。最後在獨克宗古城轉動世界上最大的轉經筒，為自己與家人祈求吉祥與福報。"
+                                            </p>
+                                            <div class="space-y-4">
+                                                <p
+                                                    class="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-clock" aria-hidden="true">
+                                                        <circle cx="12" cy="12" r="10"></circle>
+                                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                                    </svg>
+                                                    今日行程亮點
+                                                </p>
+                                                <div class="grid grid-cols-1 gap-4">
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>虎跳峽磅礡巨浪：近距離感受金沙江在此狂嘯咆哮，巨石與激流交織出震撼心靈的壯闊生命力。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>小布達拉宮：松贊林寺：宏偉的藏傳佛教聖地依山而建，層層疊疊的佛堂展現出宗教信仰的莊嚴力量。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>龜山公園轉經筒：在世界上最大的轉經筒前雙手合十，虔誠祈願，為家人與世界求得圓滿吉祥。</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 group">
+                        <div class="md:w-32 flex flex-row md:flex-col items-center md:items-end gap-2 md:pt-4">
+                            <div class="text-emerald-600 font-black text-3xl md:text-4xl tracking-tighter">3/7</div>
+                            <div
+                                class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                                Day 06
+                            </div>
+                        </div>
+                        <div
+                            class="flex-1 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                            <div class="flex flex-col lg:flex-row min-h-[450px]">
+                                <div
+                                    class="lg:w-2/5 relative bg-slate-100 overflow-hidden h-64 lg:h-auto lg:min-h-full">
+                                    <img src="assets/6.jpg" alt="Day 6 Image"
+                                        class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                                    <div
+                                        class="absolute top-4 left-4 bg-black/40 backdrop-blur-md text-white px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 border border-white/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hotel"
+                                            aria-hidden="true">
+                                            <path d="M10 22v-6.57"></path>
+                                            <path d="M12 11h.01"></path>
+                                            <path d="M12 7h.01"></path>
+                                            <path d="M14 15.43V22"></path>
+                                            <path d="M15 16a5 5 0 0 0-6 0"></path>
+                                            <path d="M16 11h.01"></path>
+                                            <path d="M16 7h.01"></path>
+                                            <path d="M8 11h.01"></path>
+                                            <path d="M8 7h.01"></path>
+                                            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                                        </svg>
+                                        麗江
+                                    </div>
+                                </div>
+                                <div class="lg:w-3/5 p-4 lg:p-8 flex flex-col justify-between">
+                                    <div>
+                                        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-800 leading-tight">
+                                            國家公園．自然洗禮</h2>
+                                        <div
+                                            class="flex items-start gap-3 mb-6 p-4 bg-emerald-50/50 rounded-2xl border border-emerald-100/50">
+                                            <div class="bg-white p-2 rounded-full shadow-sm text-emerald-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-plane" aria-hidden="true">
+                                                    <path
+                                                        d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <p
+                                                    class="text-[10px] uppercase font-bold text-emerald-600/60 tracking-widest mb-0.5">
+                                                    交通路線 / 途經</p>
+                                                <p class="font-semibold text-slate-700 text-sm md:text-base">普達措國家公園 -
+                                                    屬都湖 -
+                                                    碧塔海 - 麗江</p>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-6">
+                                            <p
+                                                class="text-slate-600 leading-relaxed text-sm md:text-base italic border-l-4 border-emerald-500/30 pl-4">
+                                                "普達措在藏語中意為「普度眾生到達彼岸」。這裡擁有原始的森林、高原濕地與絕美湖泊。走在屬都湖邊的木棧道上，您能見到可愛的小松鼠在林間穿梭，氂牛在草甸上悠閒覓食。這裡的空氣負離子含量極高，是一次身心靈的深呼吸之旅，讓您在純淨的自然律動中洗去疲憊，下午滿載芬多精回到麗江。"
+                                            </p>
+                                            <div class="space-y-4">
+                                                <p
+                                                    class="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-clock" aria-hidden="true">
+                                                        <circle cx="12" cy="12" r="10"></circle>
+                                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                                    </svg>
+                                                    今日行程亮點
+                                                </p>
+                                                <div class="grid grid-cols-1 gap-4">
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>普達措原始森林：漫遊在巨大的天然氧吧，仰望參天古樹，傾聽風穿過針葉林的私語。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>屬都湖棧道漫步：湖光山色盡收眼底，看這顆高原明珠在清晨薄霧中若隱若現，宛若世外桃源。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>高原牧場：看野花在草原肆意綻放，氂牛與羊群悠閒漫步，勾勒出一幅寧靜祥和的田園牧歌。</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 group">
+                        <div class="md:w-32 flex flex-row md:flex-col items-center md:items-end gap-2 md:pt-4">
+                            <div class="text-emerald-600 font-black text-3xl md:text-4xl tracking-tighter">3/8</div>
+                            <div
+                                class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                                Day 07
+                            </div>
+                        </div>
+                        <div
+                            class="flex-1 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                            <div class="flex flex-col lg:flex-row min-h-[450px]">
+                                <div
+                                    class="lg:w-2/5 relative bg-slate-100 overflow-hidden h-64 lg:h-auto lg:min-h-full">
+                                    <img src="assets/7.jpg" alt="Day 7 Image"
+                                        class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                                    <div
+                                        class="absolute top-4 left-4 bg-black/40 backdrop-blur-md text-white px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 border border-white/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hotel"
+                                            aria-hidden="true">
+                                            <path d="M10 22v-6.57"></path>
+                                            <path d="M12 11h.01"></path>
+                                            <path d="M12 7h.01"></path>
+                                            <path d="M14 15.43V22"></path>
+                                            <path d="M15 16a5 5 0 0 0-6 0"></path>
+                                            <path d="M16 11h.01"></path>
+                                            <path d="M16 7h.01"></path>
+                                            <path d="M8 11h.01"></path>
+                                            <path d="M8 7h.01"></path>
+                                            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                                        </svg>
+                                        瀘沽湖
+                                    </div>
+                                </div>
+                                <div class="lg:w-3/5 p-4 lg:p-8 flex flex-col justify-between">
+                                    <div>
+                                        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-800 leading-tight">
+                                            女兒國度．瀘沽湖</h2>
+                                        <div
+                                            class="flex items-start gap-3 mb-6 p-4 bg-emerald-50/50 rounded-2xl border border-emerald-100/50">
+                                            <div class="bg-white p-2 rounded-full shadow-sm text-emerald-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-plane" aria-hidden="true">
+                                                    <path
+                                                        d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <p
+                                                    class="text-[10px] uppercase font-bold text-emerald-600/60 tracking-widest mb-0.5">
+                                                    交通路線 / 途經</p>
+                                                <p class="font-semibold text-slate-700 text-sm md:text-base">麗江 - 瀘沽湖觀景台
+                                                    -
+                                                    草海 - 情人橋</p>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-6">
+                                            <p
+                                                class="text-slate-600 leading-relaxed text-sm md:text-base italic border-l-4 border-emerald-500/30 pl-4">
+                                                "前往川滇交界的神祕湖泊——瀘沽湖。這裡是母系社會「摩梭人」的聚居地，擁有流傳千年的走婚習俗。漫步在金黃色的草海與象徵愛情的走婚橋，湖面上點綴著如白色珍珠般的波葉海菜花。晚上參加熱情的篝火晚會，與摩梭阿哥阿妹一起跳著甲搓舞，感受這個東方女兒國最淳樸、最熱情的民族生命力。"
+                                            </p>
+                                            <div class="space-y-4">
+                                                <p
+                                                    class="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-clock" aria-hidden="true">
+                                                        <circle cx="12" cy="12" r="10"></circle>
+                                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                                    </svg>
+                                                    今日行程亮點
+                                                </p>
+                                                <div class="grid grid-cols-1 gap-4">
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>草海走婚橋：跨越千年的母系社會傳奇，在隨風搖曳的蘆葦盪間，探尋一段浪漫純粹的約定。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>摩梭篝火晚會：融入熱情的摩梭大家庭，在歡快歌舞中共享這場星空下最熱鬧的民俗盛宴。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>瀘沽湖絕美夕陽：天際線染成耀眼橘紅，金光灑滿平靜湖面，靜候此刻屬於心靈的壯麗回憶。</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 group">
+                        <div class="md:w-32 flex flex-row md:flex-col items-center md:items-end gap-2 md:pt-4">
+                            <div class="text-emerald-600 font-black text-3xl md:text-4xl tracking-tighter">3/9</div>
+                            <div
+                                class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                                Day 08
+                            </div>
+                        </div>
+                        <div id="lugulake"
+                            class="flex-1 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                            <div class="flex flex-col lg:flex-row min-h-[450px]">
+                                <div
+                                    class="lg:w-2/5 relative bg-slate-100 overflow-hidden h-64 lg:h-auto lg:min-h-full">
+                                    <img src="assets/8.png" alt="Day 8 Image"
+                                        class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                                    <div
+                                        class="absolute top-4 left-4 bg-black/40 backdrop-blur-md text-white px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 border border-white/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hotel"
+                                            aria-hidden="true">
+                                            <path d="M10 22v-6.57"></path>
+                                            <path d="M12 11h.01"></path>
+                                            <path d="M12 7h.01"></path>
+                                            <path d="M14 15.43V22"></path>
+                                            <path d="M15 16a5 5 0 0 0-6 0"></path>
+                                            <path d="M16 11h.01"></path>
+                                            <path d="M16 7h.01"></path>
+                                            <path d="M8 11h.01"></path>
+                                            <path d="M8 7h.01"></path>
+                                            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                                        </svg>
+                                        麗江
+                                    </div>
+                                </div>
+                                <div class="lg:w-3/5 p-4 lg:p-8 flex flex-col justify-between">
+                                    <div>
+                                        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-800 leading-tight">
+                                            湖光山色．麗江印象</h2>
+                                        <div
+                                            class="flex items-start gap-3 mb-6 p-4 bg-emerald-50/50 rounded-2xl border border-emerald-100/50">
+                                            <div class="bg-white p-2 rounded-full shadow-sm text-emerald-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-plane" aria-hidden="true">
+                                                    <path
+                                                        d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <p
+                                                    class="text-[10px] uppercase font-bold text-emerald-600/60 tracking-widest mb-0.5">
+                                                    交通路線 / 途經</p>
+                                                <p class="font-semibold text-slate-700 text-sm md:text-base">瀘沽湖豬槽船 -
+                                                    里務比島 -
+                                                    麗江金沙秀</p>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-6">
+                                            <p
+                                                class="text-slate-600 leading-relaxed text-sm md:text-base italic border-l-4 border-emerald-500/30 pl-4">
+                                                "早起搭乘傳統的「豬槽船」划向湖心，清晨的霧氣籠罩在里務比島，彷彿置身於蓬萊仙境。登島參觀里務比寺，俯瞰湛藍如藍寶石般的湖水。回程麗江後，晚上欣賞《麗江金沙》大型歌舞表演，透過頂尖的聲光效果與數百位舞者的精湛演出，深入了解雲南少數民族千年的遷徙歷史、民俗風情與永恆的愛情史詩。"
+                                            </p>
+                                            <div class="space-y-4">
+                                                <p
+                                                    class="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-clock" aria-hidden="true">
+                                                        <circle cx="12" cy="12" r="10"></circle>
+                                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                                    </svg>
+                                                    今日行程亮點
+                                                </p>
+                                                <div class="grid grid-cols-1 gap-4">
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>傳統豬槽船體驗：坐在特色木船上隨波盪漾，靜靜感受瀘沽湖極致純淨、清澈見底的藍色靈魂。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>里務比島登島：探訪孤懸湖心的神聖孤島，在高處俯瞰如藍寶石般的湖景，視野遼闊心曠神怡。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>金沙秀視覺饗宴：震撼心靈的大型歌舞史詩，帶您穿越千年時空，領略滇西大地燦爛的民族文化。</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 group">
+                        <div class="md:w-32 flex flex-row md:flex-col items-center md:items-end gap-2 md:pt-4">
+                            <div class="text-emerald-600 font-black text-3xl md:text-4xl tracking-tighter">3/10</div>
+                            <div
+                                class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                                Day 09
+                            </div>
+                        </div>
+                        <div
+                            class="flex-1 bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                            <div class="flex flex-col lg:flex-row min-h-[450px]">
+                                <div
+                                    class="lg:w-2/5 relative bg-slate-100 overflow-hidden h-64 lg:h-auto lg:min-h-full">
+                                    <img src="assets/9.png" alt="Day 9 Image"
+                                        class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+                                    <div
+                                        class="absolute top-4 left-4 bg-black/40 backdrop-blur-md text-white px-3 py-1 rounded-lg text-xs flex items-center gap-1.5 border border-white/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hotel"
+                                            aria-hidden="true">
+                                            <path d="M10 22v-6.57"></path>
+                                            <path d="M12 11h.01"></path>
+                                            <path d="M12 7h.01"></path>
+                                            <path d="M14 15.43V22"></path>
+                                            <path d="M15 16a5 5 0 0 0-6 0"></path>
+                                            <path d="M16 11h.01"></path>
+                                            <path d="M16 7h.01"></path>
+                                            <path d="M8 11h.01"></path>
+                                            <path d="M8 7h.01"></path>
+                                            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                                        </svg>
+                                        溫暖的家
+                                    </div>
+                                </div>
+                                <div class="lg:w-3/5 p-4 lg:p-8 flex flex-col justify-between">
+                                    <div>
+                                        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-800 leading-tight">
+                                            珍重再見．圓滿歸途</h2>
+                                        <div
+                                            class="flex items-start gap-3 mb-6 p-4 bg-emerald-50/50 rounded-2xl border border-emerald-100/50">
+                                            <div class="bg-white p-2 rounded-full shadow-sm text-emerald-500">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-plane" aria-hidden="true">
+                                                    <path
+                                                        d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <p
+                                                    class="text-[10px] uppercase font-bold text-emerald-600/60 tracking-widest mb-0.5">
+                                                    交通路線 / 途經</p>
+                                                <p class="font-semibold text-slate-700 text-sm md:text-base">麗江 - 香港 -
+                                                    台北</p>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-6">
+                                            <p
+                                                class="text-slate-600 leading-relaxed text-sm md:text-base italic border-l-4 border-emerald-500/30 pl-4">
+                                                "旅程來到最後一天，在麗江的晨曦中享受悠閒早餐，選購一些普洱茶、鮮花餅或手工銀飾作為旅遊紀念。隨後帶著滿滿的感動與數千張珍貴照片，前往三義機場經香港轉機飛往台北。雖然這趟橫跨雪山與湖泊的朝聖之旅即將劃下句點，但雲南那抹純淨的蔚藍，將永遠留在您的心靈深處。"
+                                            </p>
+                                            <div class="space-y-4">
+                                                <p
+                                                    class="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="lucide lucide-clock" aria-hidden="true">
+                                                        <circle cx="12" cy="12" r="10"></circle>
+                                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                                    </svg>
+                                                    今日行程亮點
+                                                </p>
+                                                <div class="grid grid-cols-1 gap-4">
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>機場送機：專人專車貼心接送服務，為這段精彩的高原冒險與靈性之旅畫下最完美的句點。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>選購伴手禮：帶走一盒香甜鮮花餅或手工藝品，將雲南的溫暖與鮮艷色彩帶回家中分享給親友。</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-slate-50 border border-slate-100 p-3 rounded-xl text-slate-700 text-sm leading-relaxed flex items-start gap-3">
+                                                        <div
+                                                            class="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0">
+                                                        </div>
+                                                        <span>期待下次旅程：珍藏每一份旅途中的感動，雲南那抹蔚藍始終在此，靜候您的下一次歸期。</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-20 border-t border-slate-200 pt-16">
+                    <div id="trust" class="text-center mb-12">
+                        <h3 class="text-3xl font-bold text-slate-800">行前溫馨提醒</h3>
+                        <p class="text-slate-500 mt-2">做好充分準備，讓旅程更加完美</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 transition-transform hover:-translate-y-2">
+                            <div
+                                class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 text-emerald-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-info" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 16v-4"></path>
+                                    <path d="M12 8h.01"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold mb-4 text-slate-800">高反預防</h4>
+                            <p class="text-slate-600 leading-relaxed text-sm">香格里拉海拔約 3300
+                                米。建議抵達初期多喝水、少運動，不建議抵達首晚洗頭，以防感冒引發高原反應。</p>
+                        </div>
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 transition-transform hover:-translate-y-2">
+                            <div
+                                class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 text-amber-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-waves" aria-hidden="true">
+                                    <path
+                                        d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1">
+                                    </path>
+                                    <path
+                                        d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1">
+                                    </path>
+                                    <path
+                                        d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold mb-4 text-slate-800">穿搭建議</h4>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                雲南早晚溫差大。請採用洋蔥式穿法，玉龍雪山與國家公園區域氣溫極低，務必攜帶防風、防水的加厚外套。</p>
+                        </div>
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 transition-transform hover:-translate-y-2">
+                            <div
+                                class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center mb-6 text-sky-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-compass" aria-hidden="true">
+                                    <path
+                                        d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z">
+                                    </path>
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                </svg>
+                            </div>
+                            <h4 class="text-xl font-bold mb-4 text-slate-800">高原防曬</h4>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                高海拔地區紫外線強烈。墨鏡、遮陽帽、高效防曬乳為必備品，以免曬傷。同時氣候乾燥，護唇膏與補水噴霧也非常實用。</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer class="bg-gray-900 text-gray-400 py-12 pb-24 md:pb-12 mt-auto">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h3 class="text-white text-2xl font-serif font-bold mb-4">誠品樂遊中華</h3>
+                <p class="mb-8">深圳直營 · 專注兩岸高端落地接待</p>
+                <div class="flex justify-center gap-6 mb-8">
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook text-2xl"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram text-2xl"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-youtube text-2xl"></i></a>
+                </div>
+                <p class="text-sm">© 2025 誠品樂遊中華. All rights reserved. <br>本網站僅提供旅遊諮詢與行程規劃服務，具體行程由當地具資質車隊與地接社執行。
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <div id="sticky-footer"
+        class="fixed bottom-0 left-0 w-full bg-white shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] p-4 md:hidden z-50 flex gap-4 items-center">
+        <div class="flex-1">
+            <p class="text-xs text-gray-500">有疑問？真人線上回覆</p>
+            <p class="font-bold text-emerald-800">立即諮詢行程</p>
+        </div>
+        <a href="https://line.me/R/ti/p/@000qngjp?oat_content=url&ts=11192309" target="_blank"
+            class="flex-1 bg-line text-white text-center py-3 rounded-lg font-bold shadow-md animate-pulse flex items-center justify-center gap-2">
+            <i class="fa-brands fa-line text-xl"></i> 加 LINE 聊聊
+        </a>
+    </div>
+
+    <!-- Desktop Floating LINE Button -->
+    <a href="https://line.me/R/ti/p/@000qngjp?oat_content=url&ts=11192309" target="_blank"
+        class="hidden md:flex fixed bottom-10 right-10 z-50 bg-line hover:bg-emerald-600 text-white px-6 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all items-center gap-3 animate-bounce">
+        <i class="fa-brands fa-line text-3xl"></i>
+        <span class="text-lg">專人諮詢</span>
+    </a>
+
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
