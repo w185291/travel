@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>自然人文 - 朝鮮假期</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body class="bg-stone-50 text-gray-800 antialiased overflow-x-hidden selection:bg-primary selection:text-white flex flex-col min-h-screen">
+
+<!-- Mobile Menu Toggle & Overlay -->
+<input class="peer hidden" id="mobile-menu-toggle" type="checkbox"/>
+<div class="fixed inset-0 bg-black/50 z-40 hidden peer-checked:block lg:hidden transition-opacity"></div>
+<div class="fixed top-0 right-0 w-[70%] h-full bg-white z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 lg:hidden shadow-2xl flex flex-col p-6 overflow-y-auto">
+    <div class="flex justify-end mb-8">
+        <label class="cursor-pointer p-2 rounded-full hover:bg-gray-100" for="mobile-menu-toggle">
+            <span class="material-symbols-outlined text-3xl text-gray-800">close</span>
+        </label>
+    </div>
+    <nav class="flex flex-col gap-6 text-lg font-medium text-gray-700">
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="index.html">首頁</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="about.html">關於朝鮮</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="nature.html">自然人文</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="landmarks.html">經典地標</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="experience.html">深度體驗</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="itinerary.html">行程攻略</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="visa.html">簽證資訊</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="metro.html">平壤地鐵</a>
+    </nav>
+    <div class="mt-auto pt-8 border-t border-gray-200">
+        <div class="flex flex-col gap-2 text-sm text-gray-500">
+            <span>台北總代理</span>
+            <span>(02) 2515-8500</span>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="w-full z-30 bg-white/95 backdrop-blur-sm border-b border-stone-200 transition-all duration-300 sticky top-0">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white shrink-0 shadow-sm group-hover:bg-primary-dark transition-colors duration-500">
+                    <span class="material-symbols-outlined text-2xl">flight_takeoff</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-lg md:text-xl font-bold tracking-widest text-gray-900 leading-none group-hover:text-primary transition-colors">朝鮮假期</span>
+                    <span class="text-[10px] md:text-xs text-gray-500 tracking-wider uppercase mt-1">Air Koryo Taiwan Agent</span>
+                </div>
+            </a>
+            
+            <nav class="hidden lg:flex items-center gap-6 xl:gap-8">
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="index.html">首頁</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="about.html">關於朝鮮</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="nature.html">自然人文</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="landmarks.html">經典地標</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="experience.html">深度體驗</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="itinerary.html">行程攻略</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="visa.html">簽證資訊</a>
+            </nav>
+            
+            <div class="lg:hidden">
+                <label class="cursor-pointer p-2 rounded-md hover:bg-gray-100 flex items-center justify-center" for="mobile-menu-toggle">
+                    <span class="material-symbols-outlined text-3xl text-gray-800">menu</span>
+                </label>
+            </div>
+            <div class="hidden lg:block">
+                <a href="https://line.me/R/ti/p/@000qngjp?oat_content=url&amp;ts=11192309" target="_blank" class="bg-gray-900 text-white px-6 py-2 text-sm tracking-widest hover:bg-primary transition-colors duration-300 rounded shadow-lg flex items-center gap-2">
+                    <i class="fa-brands fa-line text-lg"></i> 立即預訂
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="flex-grow flex flex-col w-full relative">
+<main class="w-full bg-white">
+            <section class="relative h-[85vh] w-full overflow-hidden">
+                <div class="absolute inset-0">
+                    <img alt="Serene landscape of North Korea mountains"
+                        class="h-full w-full object-cover object-center brightness-90"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX1mJ6s3U5LRVv3pWzJ7fMjvp8CISMHgsBBgaGXcvhirTNMx8M33r5viBpZoF4A6uJAFgCga2Td4PszUBJ_N2Nal-d02gd7_W2DrOHf_JMo3gCNIcukPT1tBikyjwaHnrfheyqVj1IBoKoX9atfhQtz2UPakIw93u_0K1dR_8xGTAACnap8BlsfWLfNt0EAQIM4HN0aTMkzQg1OLa8BMDhV02h_S7vVD3g0mX69ulRvqIeD82Y3Sq5paq1xrc6CSdR8cuu1abxAls" />
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60"></div>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center text-center">
+                    <div class="max-w-4xl px-6 transform translate-y-12 animate-fade-in-up">
+                        <span
+                            class="mb-4 inline-block font-sans text-sm font-bold uppercase tracking-[0.2em] text-white/90">Discover
+                            the Undiscovered</span>
+                        <h1
+                            class="font-serif text-5xl font-bold leading-tight text-white md:text-7xl lg:text-8xl drop-shadow-xl">
+                            自然人文<span
+                                class="block text-3xl md:text-4xl lg:text-5xl mt-4 font-light opacity-90">沉浸式體驗之旅</span>
+                        </h1>
+                        <p class="mt-8 mx-auto max-w-2xl text-lg font-light text-white/80 md:text-xl leading-relaxed">
+                            在時光的縫隙中，探索朝鮮的神秘面紗。<br />從舌尖上的美味到壯麗的山河，每一刻都是獨家記憶。
+                        </p>
+                    </div>
+                </div>
+                <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/70 animate-bounce">
+                    <span class="material-symbols-outlined text-4xl">keyboard_arrow_down</span>
+                </div>
+            </section>
+
+            <section class="mx-auto max-w-[1400px] px-6 py-24 lg:px-12">
+                <div class="mb-16 flex flex-col items-center text-center">
+                    <h2 class="font-serif text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl">舌尖上的對味</h2>
+                    <div class="mt-6 h-1 w-24 bg-primary"></div>
+                    <p class="mt-6 max-w-2xl font-serif text-lg text-gray-600">朝鮮地道風味，延續千年的飲食智慧。</p>
+                </div>
+                <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8 items-start">
+                    <div class="lg:col-span-8 group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-2xl aspect-[16/10]">
+                            <img alt="Naengmyeon cold noodles"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKB45V6Hcf-nI9-mUEAWLo5hAxBQqDF9y0m4-_hnBxAOJIedQMLv34lSYZFm5-h2waRp8beQGrwWGgbef3_mkR8opr2hFrLX43edzI5szdTVEIz3Q9G_lxKzxL0h2ZrellYabjz8mQ_T5oJ10nIb9UiRr6hN3zTJq-1q2YccP7GW0dUvGvZ446nhXV_ECGGBPbKF-PvJ1FyNmckmvciexLeAfEKokYKbISVKoS4tMTfqb_tAmPsrAj1JFm-3-g5fcOrmsRPzIdzpo" />
+                            <div
+                                class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/30 to-transparent p-8 md:p-12">
+                                <span
+                                    class="mb-2 block font-sans text-xs font-bold uppercase tracking-wider text-primary">Signature
+                                    Dish</span>
+                                <h3 class="font-serif text-3xl font-bold text-white md:text-4xl">平壤冷麵 (Naengmyeon)</h3>
+                                <p class="mt-3 max-w-xl text-white/90 font-light">玉流館的傳奇之味，以蕎麥製成的麵條，搭配清爽肉湯與獨特配料，口感爽滑勁道。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 flex flex-col gap-8 h-full">
+                        <div class="group relative flex-1 overflow-hidden rounded-2xl cursor-pointer min-h-[300px]">
+                            <img alt="Kaesong Copper Bowls"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY6MnAvqvgcC2jY-q-vtxsNKYRSQMX-v-DVVE4RAuxgBJuLUhmsBYpwI0FdZ60WHblzSxxLI2VmxXwFjBcaNvLSg-zi3Q-QvwP0qF2BMQnWxANx4COxQCBOstPn6E6ARQv150LxFrUCXyr7s9bKiPJJTmgd8CVK0Fz6EZ8u3YtS0mlQQJl3rBNY3GVYbhI-nxUMx49iXTGDa_zMUPjWsT247Cw5oUB86VuRnr_pjLXmetECCic1k00Rpn3JkPXHBoW_vhVsVDMMW0" />
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                            <div class="absolute bottom-0 p-8">
+                                <h3 class="font-serif text-2xl font-bold text-white">開城銅碗御膳</h3>
+                                <p class="mt-2 text-sm text-white/90">昔日高麗皇室的尊貴享受，十一碟金色銅碗盛裝各式精緻小菜。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="overflow-hidden rounded-2xl aspect-[4/3] mb-4">
+                            <img alt="Duck BBQ"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJimPKnoWc3cGUqQSi9vu_JViq35alHnfFVCieVU95eYYEVSI_ea8A18UZPQ711ph9KuvKgQTVjHUbb5e1k8x8ajX-wN5PhFpSRXnbW-MFZveT3bujE_0xvuoPkqTjLPTJGcONNwH5JQ3Zv5jFDuyFCDF-YfdshTm4eIs6hILeszhX7P2e6SjEXqZMXSoqANTV41iEoujnJ4LrYZM6nEm7wiSHQM5vSNXc1S-MUj1coYPQ07AiqPhpWfHYNmUOSXoUS6W2eq36bd8" />
+                        </div>
+                        <h3
+                            class="font-serif text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+                            朝鮮烤鴨肉</h3>
+                        <p class="mt-2 text-sm text-gray-500 leading-relaxed">嚴選肉質鮮嫩鴨肉，炭火直烤逼出油脂香氣，佐以特製醬料。</p>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="overflow-hidden rounded-2xl aspect-[4/3] mb-4">
+                            <img alt="Ginseng Chicken"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhKaipoe3ft8PdaMqhA8byYeplwuZxJSfzPJ0iUtNVGzWEXYi_c1AbRBZ2qZBf0PcxMRimjZs8mziPIQbzghfCQbA2KGsBm0mGoqmgEhjCyUVj9tTG3tQr_Cf_c3DKH5w2rlZG_PPk1rNaslLFaLhddtX5r31Snrqa2Od3Z6lrXJSS48BZ6kCsfATCe9JSb-w0brFu9f2EsFYQ1s_AzQCldjxs_7qxKBPg-kSTq14l7zK9DylCcBX6W7D-gb5D4Y4AR55OrJ-boZ4" />
+                        </div>
+                        <h3
+                            class="font-serif text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+                            高麗人蔘雞</h3>
+                        <p class="mt-2 text-sm text-gray-500 leading-relaxed">整支開城高麗人蔘燉煮，湯頭濃郁回甘，滋補養生的上乘之選。</p>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="overflow-hidden rounded-2xl aspect-[4/3] mb-4">
+                            <img alt="Mountain Meal"
+                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuClautdyCgpyIhdSKlitrI21s6OpbybInSQnT9F6zo89O2APbzdiu7nkp7mgNJTZYhZuL1PnINVnZk5_JKsQNvJJOJxTh0dpucnwbkupZt1s9JHQe0IRf62qdTWkZNv0wHynbfw-rfzgiWUpU4FSiWOwuUtASuxdEtjiXTiU5mfqG97eKlkp6KVHAbuh5IKydNf1BdWAOseiljRp-sXBgKi_-GdHeqozYKMrj_K5kQg1moJzgkExjQRSANuj26ueV1MVKWm-5lvyrY" />
+                        </div>
+                        <h3
+                            class="font-serif text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+                            妙香山野味餐</h3>
+                        <p class="mt-2 text-sm text-gray-500 leading-relaxed">於清幽山林間享用在地野菜與野味，感受大自然的純粹餽贈。</p>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-stone-50 py-24">
+                <div class="mx-auto max-w-[1200px] px-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                        <div class="order-2 md:order-1 space-y-8 pr-0 md:pr-12">
+                            <div class="inline-flex items-center gap-2 border-b border-primary pb-1">
+                                <span class="material-symbols-outlined text-primary">location_on</span>
+                                <span class="text-sm font-bold uppercase tracking-widest text-primary">Beijing
+                                    Transit</span>
+                            </div>
+                            <h2 class="font-serif text-4xl font-bold text-gray-900 leading-tight">北京中轉．<br />味蕾的華麗過場
+                            </h2>
+                            <p class="text-lg font-light text-gray-600 leading-loose">
+                                旅程的序曲或尾聲，在北京停留的時光亦不容馬虎。我們精心安排了具代表性的在地美饌，讓等待轉機的時間，轉化為一場舌尖上的華麗探險。
+                            </p>
+                            <div class="space-y-6 pt-4">
+                                <div class="flex gap-4">
+                                    <div class="mt-1 size-2 rounded-full bg-primary shrink-0"></div>
+                                    <div>
+                                        <h4 class="font-serif text-xl font-bold text-gray-900">野生菌火鍋</h4>
+                                        <p class="mt-1 text-gray-500 font-light">來自高原的珍稀野菌，熬煮出一鍋鮮美靈魂，暖胃更暖心。</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="mt-1 size-2 rounded-full bg-primary shrink-0"></div>
+                                    <div>
+                                        <h4 class="font-serif text-xl font-bold text-gray-900">蒙古烤肉</h4>
+                                        <p class="mt-1 text-gray-500 font-light">大漠豪情的飲食體驗，炙熱鐵板上翻炒出的焦香，令人食指大動。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-1 md:order-2 grid grid-cols-2 gap-4">
+                            <img alt="Travel Atmosphere"
+                                class="col-span-2 h-64 w-full rounded-2xl object-cover shadow-lg"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtunASVFLvHacBjtMMIxE1P_XaI8yvEMX2XNjvPSYcu0gW-pOLX-rldW_kfdvC5AgZsZ0zUYd1fcYC-QdO3ebrCxIGRyjpqF5SU8ZHQB1HDpBz4mECP2ZF4TPdZjwBK2JYRpsiCL2xSNvmwjGdgkHZJtcXQZn-fgRB1--pG0YxV_13MetaoVNV_qzLo7Kn7WUIV-WqyLLwU-aFI2VCvwMF0eZjuo2Ad68VdlMZW7Xw7bwFaFrzdWb6VVTvHTLqR-G8PkMTxb6mJPs" />
+                            <div
+                                class="h-48 rounded-2xl bg-white p-6 flex items-center justify-center shadow-md border border-gray-100">
+                                <img alt="Beijing Mushroom Feast" class="h-full w-full object-cover rounded-2xl"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGxNIdo7F4D6MERnZqEGHYlUrzGLZ5Nwf_J9g4H9_Ojmk8OQQbh4y6_Kr_VFxXF8C8PHJGrRDV-jaIRy1VWjtinoe2cmF9g4mkk0anSlnEW3IiULXvtbD5ngdgPnVX1VJAEBXZi9BWtezL9tgU4KPZkuZ4oasRW03V8Sprr-AhKXcK6uKwkRD1qGCPvqUc0aQiFHxUwHTnABtO44Sjrb9OhGooCyQLASes2ibpjO111DiZ5vkfIU6B8DiI2IlEDN2NDi_sHrSbIDA" />
+                            </div>
+                            <div
+                                class="h-48 rounded-2xl bg-white p-6 flex items-center justify-center shadow-md border border-gray-100">
+                                <img alt="Beijing Mongolian Cuisine" class="h-full w-full object-cover rounded-2xl"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTN2xjAzckVL5u5SHbiYxtNYyYMdrXno2zn1n5WB6yw4BEFKjrr9pKZ1IsPVFLgQ-6z4q7kMQG3b0TJ-lP_U7j2zMo6Fic0sndh354J0_HtzLN_MZGXjNY7pE0N2JJ8tgjfOW68vKBRApJY0g8qDDH9FbEn-hCSDW3wB68qrdnOqt_dOaS7CFo_wsZtmpa99ieedYO3-xkNQNsu_Oo2UNesUw9pCLXtsLWnCl5r421p6_Oh4PVEyYBA8qBHr8FDfVAMQGfineavEo" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 bg-white">
+                <div class="mx-auto max-w-[1400px] px-6 lg:px-12">
+                    <div class="mb-20 text-center">
+                        <span class="text-xs font-bold uppercase tracking-[0.3em] text-gray-400">Luxury Stay</span>
+                        <h2 class="mt-4 font-serif text-4xl font-bold text-gray-900 md:text-5xl">特級住宿體驗</h2>
+                    </div>
+                    <div class="mb-24 flex flex-col md:flex-row items-center gap-12 lg:gap-24">
+                        <div class="w-full md:w-3/5">
+                            <div class="relative aspect-[4/3] overflow-hidden rounded-sm shadow-2xl shadow-gray-200">
+                                <img alt="Koryo Hotel Lobby" class="h-full w-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD14CvYM7GQy7YxUIM5HwmhJpQFDrX959lMmNhV3AZcW1bFbvBf9DUhwYFljnpJFq-5u3fyQUAXLz6DwS9RcdvAOUWjvzlEYsAjNRric2NaqLBhAxZr0lmDT4BFz1as6l4yIccksYLVACim2RBUqkW9DsoBFrFCNUuNkUMgNkxeldp9kmuU26VpAwEjm2b5PuFG_4f3KYYs1AqA3NBKTQGHCrEbWaUXEkX14QdFJELQnkM3tdEWjb5O0zkoDshhLpa4diqATHp-p-g" />
+                            </div>
+                        </div>
+                        <div class="w-full md:w-2/5 space-y-6">
+                            <h3 class="font-serif text-3xl font-bold text-gray-900">高麗飯店 (Koryo Hotel)</h3>
+                            <div class="h-0.5 w-12 bg-primary"></div>
+                            <p class="text-gray-600 leading-loose font-light">
+                                平壤市中心的地標性建築，雙塔式設計氣勢恢宏。作為特級飯店，這裡接待過無數國賓。大廳金碧輝煌，客房舒適典雅，頂層旋轉餐廳更可俯瞰平壤全景。
+                            </p>
+                            <div class="flex gap-4 text-gray-400">
+                                <span class="material-symbols-outlined">wifi</span>
+                                <span class="material-symbols-outlined">pool</span>
+                                <span class="material-symbols-outlined">restaurant</span>
+                                <span class="material-symbols-outlined">local_bar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
+                        <div class="space-y-6">
+                            <div class="relative aspect-[16/10] overflow-hidden rounded-sm shadow-xl shadow-gray-100">
+                                <img alt="Yanggakdo Hotel View" class="h-full w-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMDmAtGdIC-O2vV3q2ItOtDthyISupytieolsydx-Pnn6G1_-A5vUa0MxFROpnOhIZM50UDu4Gstd7uCQMXQq0D4Dx3qKMdGtsptph0mF3vaakqJxBOVsa1a9rVILFsbr8CJi-9Q2V0wmSz1Z9zZvSEsxwXjkTkyEf1R8e51_Rxm88ScOIRrjzJUPFqbDr5PxXLDIE9CgCa3dvLrlDqGgyoNEZMFYjj6ZiAx1vuRyi8CX7TixYMeSCXoXWqecvzQSoicQxulZDMpg" />
+                            </div>
+                            <div class="px-4">
+                                <h3 class="font-serif text-2xl font-bold text-gray-900">羊角島國際飯店</h3>
+                                <p class="mt-3 text-gray-600 font-light leading-relaxed">
+                                    屹立於大同江中的羊角島上，四面環水，擁有絕佳的江景視野。是平壤設施最齊全的特級飯店之一，頂樓旋轉餐廳與保齡球館為其特色。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="relative aspect-[16/10] overflow-hidden rounded-sm shadow-xl shadow-gray-100">
+                                <img alt="Myohyangsan Hotel" class="h-full w-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwsk0SXbZX8YyF10M6yzaMWsGLlGaUZfhS_JJapyIAn9LtY6fN1KukXT6d3xxz0nyUcYQqalKcH74-1O_lL2bU5WJbQR13Id2suEZ6BAms-6toLVRv3tKbbOJxSqlgbXvDtQQ3T9LS4B-9cCMEiRDEySJwRS5aW7yKG9_kQHDUwPjq_hlrk0DaNIzBjKYHZ_zx71kc-cj3GaJ_xacPCyOhNJ6szoxwmmMEVr18av5xMg4Tef_3dMHKkbArgZj_Zhofddykn5HGE0M" />
+                            </div>
+                            <div class="px-4">
+                                <h3 class="font-serif text-2xl font-bold text-gray-900">香山飯店 (五星級)</h3>
+                                <p class="mt-3 text-gray-600 font-light leading-relaxed">
+                                    座落於妙香山深處的世外桃源，建築呈金字塔型，與周圍的蒼松翠柏融為一體。遠離塵囂，享受最純淨的空氣與五星級的貼心服務。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="w-full bg-black py-24 text-white">
+                <div class="mx-auto max-w-[1400px] px-6 mb-12 flex justify-between items-end">
+                    <div>
+                        <h2 class="font-serif text-4xl md:text-5xl font-bold">經典地標</h2>
+                        <p class="mt-2 text-gray-400">見證歷史的宏偉印記</p>
+                    </div>
+                    <a class="hidden md:flex items-center gap-2 text-primary hover:text-white transition-colors"
+                        href="#">
+                        <span>查看完整行程</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[600px] w-full px-4 md:px-0">
+                    <div class="relative md:col-span-2 md:row-span-2 overflow-hidden group">
+                        <img alt="Mansudae Grand Monument"
+                            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTlT-A1IMtMRMumB_k38N2Vwk7iXlVqTPPz8uzSdPEUZQXXsZ2P9YDM7DPsEnFt2dT4vJi8JmjO9Ycw04Ik5AbS0cWKIM1fJyNfk2KNQUWlvnhfR7WBl7BYTvpqbzlqslOGpHkEE6529eB9y5bz0zWfCuKxWcraTxyWBxeG23oxSVEqj1mrYMSDShp_fPTh7p623xKXsIhQPL2UCwY0kbOWPSP4XESvvqv1fvFJu3MKe64VZT829NVU3SzedioF1dgwUorJMRG6V8" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-90">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 w-full">
+                            <h3 class="text-2xl font-bold font-serif">萬壽台大紀念碑</h3>
+                            <p class="mt-2 text-sm text-gray-300 line-clamp-2">朝鮮最重要的紀念碑，兩尊巨大的領袖銅像俯瞰平壤，象徵著崇高的敬意。</p>
+                        </div>
+                    </div>
+                    <div class="relative md:col-span-1 md:row-span-1 overflow-hidden group">
+                        <img alt="Arch of Triumph"
+                            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVfXvKcQdr32UHBRaz_jswWgOT4u991OxZnwJhXuAhO8G9Wrypcq_00K_wmIfejVFlqZFasj04mbyFPwV-Yitdq5hW9TDXlHvds0-v05X7k3_-HDfIjRRFN9Rd9P0gZ55QhCyqavIxgiold0oOBgZxI-qcN0BU9-nY1h8dib_ogd9AEvwPp8SFqUiYs_hBHtRO187duda1i-Gr-aJGNpxk62yyBLpjRzc74nNUlTS732UYYkz019I2srZIzgMB4iR3Zn_KSezHPKk" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6">
+                            <h3 class="text-xl font-bold font-serif">凱旋門</h3>
+                            <p class="text-xs text-gray-400 mt-1">比巴黎凱旋門更高的宏偉建築。</p>
+                        </div>
+                    </div>
+                    <div class="relative md:col-span-1 md:row-span-1 overflow-hidden group">
+                        <img alt="Chollima Statue"
+                            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2c3vQ-y8dCs41eVliUsfeUpRR1RK8nWoySRjA7bOEYJ6nWDEeoJp06LlJXzH2NZ8rvjCrjE4XXw97cNZgkG4Yrdqfy6gjBb6sLshCSsTCa8a9dZ84C1XAg1NAQqBhTn3nN2mZoq8d-vzXQ_zJX0z8YEUbRB4nTBiNobhmzM8SlkYXBwclxZf8rCfvcSdMs09ST56oj7UpjK9Zg8PQpVQifBW46y7aB9rnuk5zq0vBM3qAYgQVcb8H_Qm4DzX0_fXws0PXakD1Qic" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6">
+                            <h3 class="text-xl font-bold font-serif">千里馬銅像</h3>
+                            <p class="text-xs text-gray-400 mt-1">象徵朝鮮人民英雄氣概與飛速發展。</p>
+                        </div>
+                    </div>
+                    <div class="relative md:col-span-2 md:row-span-1 overflow-hidden group">
+                        <img alt="Arirang Mass Games"
+                            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcAio_-wqBSCH0vqWI1nhI6inE7oNTto2mQbx4Fh8yl9aNrd7jZCybkIOrQup-6fLfI5N_HloDFL7QtUKAgqux4y1Bs6QpmFAqdYvfogzz0trlw15IorxFj1OctIqANZ45489A7Xoa3Y8ZAH2aZloQDCb7hwPyS8sACAwlMlyn0wLgXBrBbcwePxMoBDy0kINjyJ6B9ptDCXe7H7h_zo_qVkDqKlug2v1ShBiFnVJK3_mR2UR6JR-Pann0_H9R8o8M44wmid2exw4" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6">
+                            <h3 class="text-xl font-bold font-serif">阿里郎 10萬人大體操</h3>
+                            <p class="text-xs text-gray-400 mt-1">金氏世界紀錄認證，十萬人同台演出的震撼視覺盛宴。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-[#f8f5f2] py-24 relative overflow-hidden">
+                <div class="absolute top-0 right-0 -mr-20 -mt-20 h-96 w-96 rounded-full bg-primary/5 blur-3xl"></div>
+                <div class="mx-auto max-w-[1200px] px-6 relative z-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        <div class="lg:col-span-5 relative">
+                            <div
+                                class="relative z-10 overflow-hidden rounded-t-full rounded-b-[200px] border-4 border-white shadow-2xl">
+                                <img alt="Professional Guide" class="h-[500px] w-full object-cover object-top"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIOSRV2Ptm0havNYihwG8WglqDaqzwCvga5BvheAehi3jk0B-MiRYCxPr9ZyyKALuZZIFmmnMS30zr4_tp5rohTgJ_WmQ5nL6nJO5OqekNIVNGNYLmXUBzfrTZcspG6fdcwiLCctQflEug0dgiRE4CiBmbfpzcXQIm-TvRLsdGg5IMkpbT0G5qt_jLKZCXRvhhmwONBpL8vk0oGON0WqGhCs6-X_vug_PyJ-XNeU-j4OYmcjJ_jYz_qXZq_uGbwDIu8A7nua8Gq3Q" />
+                            </div>
+                            <div
+                                class="absolute -bottom-6 -right-6 z-20 max-w-xs bg-white p-6 shadow-xl rounded-xl border-l-4 border-primary">
+                                <p class="font-serif italic text-gray-600">"我們不僅是導遊，更是您認識朝鮮文化的一扇窗。"</p>
+                                <div class="mt-4 flex items-center gap-3">
+                                    <div class="h-[1px] w-8 bg-gray-300"></div>
+                                    <span class="text-xs font-bold uppercase tracking-wider text-primary">Local
+                                        Guide</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 pl-0 lg:pl-12">
+                            <h2 class="font-serif text-4xl font-bold text-gray-900 mb-6">導遊風采與<br />特色伴手禮</h2>
+                            <p class="text-lg text-gray-600 font-light mb-12 leading-relaxed">
+                                我們的導遊均經過嚴格篩選與專業訓練，精通中文，氣質優雅。她們將以最真誠的態度，為您細說朝鮮的歷史典故。旅程結束前，別忘了帶上一份充滿朝鮮特色的禮物。
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div
+                                    class="group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <h3 class="font-serif text-xl font-bold text-gray-900">開城高麗人蔘</h3>
+                                        <span class="material-symbols-outlined text-primary text-2xl">eco</span>
+                                    </div>
+                                    <div class="h-1 w-full bg-gray-100 rounded-full mb-4 overflow-hidden">
+                                        <div
+                                            class="h-full bg-primary w-0 group-hover:w-full transition-all duration-700">
+                                        </div>
+                                    </div>
+                                    <p class="text-sm text-gray-500">世界公認品質最優，含有人蔘皂苷量最高，是贈送長輩親友的最佳健康禮品。</p>
+                                </div>
+                                <div
+                                    class="group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <h3 class="font-serif text-xl font-bold text-gray-900">朝鮮刺繡與絲綢</h3>
+                                        <span class="material-symbols-outlined text-primary text-2xl">palette</span>
+                                    </div>
+                                    <div class="h-1 w-full bg-gray-100 rounded-full mb-4 overflow-hidden">
+                                        <div
+                                            class="h-full bg-primary w-0 group-hover:w-full transition-all duration-700">
+                                        </div>
+                                    </div>
+                                    <p class="text-sm text-gray-500">傳承千年的手工藝，針法細膩，色彩艷麗，每一件都是獨一無二的藝術品。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 bg-white">
+                <div class="mx-auto max-w-[1000px] px-6 text-center">
+                    <span class="material-symbols-outlined text-5xl text-primary mb-6">handshake</span>
+                    <h2 class="font-serif text-3xl font-bold text-gray-900 mb-16">風俗禮節 · 入境隨俗</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                        <div class="hidden md:block absolute top-8 left-1/6 right-1/6 h-px bg-gray-200 -z-10"></div>
+                        <div class="flex flex-col items-center bg-white p-4">
+                            <div
+                                class="mb-6 flex size-16 items-center justify-center rounded-full bg-primary/5 text-primary ring-8 ring-white">
+                                <span class="material-symbols-outlined text-3xl">do_not_step</span>
+                            </div>
+                            <h3 class="mb-3 font-serif text-xl font-bold text-gray-900">入宅禮儀</h3>
+                            <p class="text-sm leading-relaxed text-gray-500 font-light">
+                                進門前需事先詢問並獲得准許。進入朝鮮民眾家中必須脫鞋。<br />在室內就座時，不論男女皆不可在客人面前隨意伸長雙腿，應保持莊重的坐姿，以示對主人的尊重。</p>
+                        </div>
+                        <div class="flex flex-col items-center bg-white p-4">
+                            <div
+                                class="mb-6 flex size-16 items-center justify-center rounded-full bg-primary/5 text-primary ring-8 ring-white">
+                                <span class="material-symbols-outlined text-3xl">diversity_3</span>
+                            </div>
+                            <h3 class="mb-3 font-serif text-xl font-bold text-gray-900">尊老習俗</h3>
+                            <p class="text-sm leading-relaxed text-gray-500 font-light">
+                                社會風氣極端尊崇長輩。餐桌上，晚輩需待長者舉筷用餐後方可開始進食。<br />在長輩面前，晚輩嚴禁喝酒或抽菸，對長輩說話需使用敬語，處處體現對年長者的禮遇與敬意。</p>
+                        </div>
+                        <div class="flex flex-col items-center bg-white p-4">
+                            <div
+                                class="mb-6 flex size-16 items-center justify-center rounded-full bg-primary/5 text-primary ring-8 ring-white">
+                                <span class="material-symbols-outlined text-3xl">photo_camera</span>
+                            </div>
+                            <h3 class="mb-3 font-serif text-xl font-bold text-gray-900">攝影禁忌</h3>
+                            <p class="text-sm leading-relaxed text-gray-500 font-light">
+                                拍攝人物前請先微笑徵得同意。<br />軍事設施與檢查哨通常禁止攝影，請聽從導遊指引。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+</div>
+<footer id="contact-footer" class="bg-gray-900 text-white pt-16 md:pt-24 pb-8 border-t border-gray-800 mt-auto">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="material-symbols-outlined text-3xl text-primary">flight_takeoff</span>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold tracking-widest">朝鮮假期</span>
+                        <span class="text-[10px] text-gray-400 tracking-wider uppercase">Air Koryo Taiwan Agent</span>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 font-light">
+                    高麗航空台灣總代理，專注於朝鮮旅遊二十餘年。致力於提供最專業、安全、深度的旅遊體驗。
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <span class="font-bold text-xs">FB</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <span class="font-bold text-xs">IG</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <span class="font-bold text-xs">LINE</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6 tracking-widest border-b border-gray-700 pb-2 inline-block">關於我們</h4>
+                <ul class="space-y-4 text-sm text-gray-400 font-light">
+                    <li><a href="about.html" class="hover:text-white transition-colors">品牌故事</a></li>
+                    <li><a href="itinerary.html" class="hover:text-white transition-colors">精選行程</a></li>
+                    <li><a href="visa.html" class="hover:text-white transition-colors">簽證辦理</a></li>
+                    <li><a href="metro.html" class="hover:text-white transition-colors">平壤地鐵特別企劃</a></li>
+                </ul>
+            </div>
+            <div class="lg:col-span-2">
+                <h4 class="text-lg font-bold mb-6 tracking-widest border-b border-gray-700 pb-2 inline-block">聯絡與代理資訊</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm text-gray-400 font-light">
+                    <div class="flex flex-col gap-2">
+                        <span class="text-white font-medium">台北總公司</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">location_on</span> 台北市中山區南京東路</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span> (02) 2515-8500</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-white font-medium">高雄分公司</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">location_on</span> 高雄市前金區中正四路</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span> (07) 215-6788</span>
+                    </div>
+                    <div class="flex flex-col gap-2 border-t pt-6 sm:border-t-0 sm:pt-0 sm:border-l sm:border-gray-800 sm:pl-6">
+                        <span class="text-white font-medium">指定代理商</span>
+                        <ul class="space-y-1 text-xs">
+                            <li>東南旅遊</li>
+                            <li>雄獅旅遊</li>
+                            <li>可樂旅遊</li>
+                            <li>鳳凰旅遊</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-gray-500 font-light tracking-wide">
+                © 2024 Air Koryo Taiwan Agent. All rights reserved. 交觀甲第0000號 品保北0000號
+            </p>
+            <div class="flex gap-6 text-xs text-gray-500">
+                <a href="#" class="hover:text-white transition-colors">網站地圖</a>
+                <a href="#" class="hover:text-white transition-colors">免責聲明</a>
+                <a href="#" class="hover:text-white transition-colors">隱私權政策</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating LINE Button -->
+<a href="https://line.me/R/ti/p/@000qngjp?oat_content=url&amp;ts=11192309" target="_blank" class="hidden md:flex fixed bottom-10 right-10 z-50 bg-[#06C755] hover:bg-emerald-600 text-white px-6 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all items-center gap-3 animate-bounce">
+    <i class="fa-brands fa-line text-3xl"></i>
+    <span class="text-lg tracking-widest">專人諮詢</span>
+</a>
+
+</body>
+</html>

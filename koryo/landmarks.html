@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>經典地標 - 朝鮮假期</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body class="bg-stone-50 text-gray-800 antialiased overflow-x-hidden selection:bg-primary selection:text-white flex flex-col min-h-screen">
+
+<!-- Mobile Menu Toggle & Overlay -->
+<input class="peer hidden" id="mobile-menu-toggle" type="checkbox"/>
+<div class="fixed inset-0 bg-black/50 z-40 hidden peer-checked:block lg:hidden transition-opacity"></div>
+<div class="fixed top-0 right-0 w-[70%] h-full bg-white z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 lg:hidden shadow-2xl flex flex-col p-6 overflow-y-auto">
+    <div class="flex justify-end mb-8">
+        <label class="cursor-pointer p-2 rounded-full hover:bg-gray-100" for="mobile-menu-toggle">
+            <span class="material-symbols-outlined text-3xl text-gray-800">close</span>
+        </label>
+    </div>
+    <nav class="flex flex-col gap-6 text-lg font-medium text-gray-700">
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="index.html">首頁</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="about.html">關於朝鮮</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="nature.html">自然人文</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="landmarks.html">經典地標</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="experience.html">深度體驗</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="itinerary.html">行程攻略</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="visa.html">簽證資訊</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="metro.html">平壤地鐵</a>
+    </nav>
+    <div class="mt-auto pt-8 border-t border-gray-200">
+        <div class="flex flex-col gap-2 text-sm text-gray-500">
+            <span>台北總代理</span>
+            <span>(02) 2515-8500</span>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="w-full z-30 bg-white/95 backdrop-blur-sm border-b border-stone-200 transition-all duration-300 sticky top-0">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white shrink-0 shadow-sm group-hover:bg-primary-dark transition-colors duration-500">
+                    <span class="material-symbols-outlined text-2xl">flight_takeoff</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-lg md:text-xl font-bold tracking-widest text-gray-900 leading-none group-hover:text-primary transition-colors">朝鮮假期</span>
+                    <span class="text-[10px] md:text-xs text-gray-500 tracking-wider uppercase mt-1">Air Koryo Taiwan Agent</span>
+                </div>
+            </a>
+            
+            <nav class="hidden lg:flex items-center gap-6 xl:gap-8">
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="index.html">首頁</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="about.html">關於朝鮮</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="nature.html">自然人文</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="landmarks.html">經典地標</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="experience.html">深度體驗</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="itinerary.html">行程攻略</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="visa.html">簽證資訊</a>
+            </nav>
+            
+            <div class="lg:hidden">
+                <label class="cursor-pointer p-2 rounded-md hover:bg-gray-100 flex items-center justify-center" for="mobile-menu-toggle">
+                    <span class="material-symbols-outlined text-3xl text-gray-800">menu</span>
+                </label>
+            </div>
+            <div class="hidden lg:block">
+                <a href="https://line.me/R/ti/p/@000qngjp?oat_content=url&amp;ts=11192309" target="_blank" class="bg-gray-900 text-white px-6 py-2 text-sm tracking-widest hover:bg-primary transition-colors duration-300 rounded shadow-lg flex items-center gap-2">
+                    <i class="fa-brands fa-line text-lg"></i> 立即預訂
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="flex-grow flex flex-col w-full relative">
+
+<!-- Hero Section -->
+<section class="relative h-[85vh] w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/40 z-10"></div>
+<img alt="Pyongyang Skyline" class="w-full h-full object-cover" data-alt="Cinematic wide shot of Pyongyang skyline at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxVzHXaYBk89OK9D6EzbPnyJHT9QGjIGIHWpfrtRBfIuilvg59bxdBWtz5U2Nxm-bhUTNpQZkXcyx-fUHkgVtWdv35btTd3kWIHmSwpis9Hu-DAvGbDv63stLzzhnVmEoSGW64aSOR5KEfQGD9zkNErvDNFdVNcUcjFY647QfQZt5mi3cjcqucxYpOQ54dJtYY1Iq5vYSpstxNoBA2U3acCIWx0FHOpqvUmGnEWHkYHamWfZS1F_RPY_Kf6T30HUex0GDrj2qyCx0"/>
+</div>
+<div class="relative z-20 text-center px-4 max-w-4xl">
+<span class="text-white/80 tracking-[0.3em] text-sm uppercase mb-4 block">EXPLORE THE UNSEEN</span>
+<h1 class="text-white text-6xl md:text-8xl font-black mb-6 serif-title leading-tight">經典地標巡禮</h1>
+<p class="text-white/90 text-xl md:text-2xl font-light tracking-wide serif-title italic">揭開神祕國度的面紗，走進時光凝結的宏偉篇章</p>
+<div class="mt-12">
+<button class="bg-primary text-white px-10 py-4 rounded-lg text-lg font-bold hover:scale-105 transition-transform shadow-xl">
+                            開啟旅程
+                        </button>
+</div>
+</div>
+</section>
+<!-- Introduction -->
+<section class="py-24 px-6 md:px-40 bg-white">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-8 serif-title text-slate-900">跨越時空的壯麗視野</h2>
+<p class="text-slate-600 leading-relaxed text-lg md:text-xl font-light serif-title">
+                        朝鮮，一片充滿傳奇色彩的土地。從平壤宏偉的蘇式建築到板門店凝重的歷史氣息，
+                        每一處地標都訴說著民族的堅韌與時代的變遷。跟隨高麗航空的專屬步伐，
+                        深度探索這座神祕國度的文化核心。
+                    </p>
+<div class="mt-10 h-px w-24 bg-primary mx-auto"></div>
+</div>
+</section>
+<!-- 1. 萬壽台大紀念碑 (Mansudae Grand Monument) -->
+<section class="grid grid-cols-1 lg:grid-cols-2 min-h-[600px]">
+<div class="order-2 lg:order-1 flex flex-col justify-center p-12 md:p-24 bg-background-light">
+<span class="text-primary font-bold tracking-widest mb-4">01. 領袖精神</span>
+<h3 class="text-4xl md:text-5xl font-bold mb-6 serif-title leading-snug">萬壽台大紀念碑</h3>
+<p class="text-slate-600 text-lg leading-relaxed serif-title">
+                        矗立於平壤中心的萬壽台丘陵，這裡是朝鮮最崇高的地標。巨大的青銅雕像展現了領袖的威儀，兩側的大型浮雕群組描繪了波瀾壯闊的革命史詩。它是平壤的心臟，也是了解朝鮮民族精神的起點。
+                    </p>
+</div>
+<div class="order-1 lg:order-2 h-[400px] lg:h-auto overflow-hidden">
+<img alt="Mansudae Grand Monument" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Grand bronze statues of leaders at Mansudae Monument" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1WIr7isjSPQ8B_vUuWLjiewPSEROD45Q7q7M1xRqQM2D2aF3J2dq1-PCII9OVkOzXPBrd3Pnu4dfiUhrG4zj5FuLWB5Sq7ahKEtNFBP8sJlFMmksjoNnUkJBRMr9hjlKc06lvLIJDbntre8D9T6QEvYwh_8w4ffhfrzj3IGh_aKpPc_ZsFhr4BfHPeyu1SlDGzSSFSD3lUiPgZx-WkMLi9K-R4vo2lmFjH2d-D99XmgA81ym5z7xI-pACL0CvOEFt92sHU5gVfyY"/>
+</div>
+</section>
+<!-- 2. 千里馬銅像 (Chollima Statue) -->
+<section class="grid grid-cols-1 lg:grid-cols-2 min-h-[600px]">
+<div class="h-[400px] lg:h-auto overflow-hidden">
+<img alt="Chollima Statue" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Dynamic sculpture of the mythical winged horse Chollima" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1-yus2sWzlKL5ElDWEXg8mQ_iTXR3TyQMBWxzCEIVeba2ZjetkGvefZPC_KZEob6YFhbgvpTBsU0b3o4PdNqS-aZZEorPvNfe-ImGK4zTRVhiRLXHCDz9ZRczvRA2FW1BQVmHLBvqFHK19uh7gXjOsCycXhFotuChzOClsXN8Q0xGOvlm7On-p4HF_pPRInb01Cri0mCJzcnPMd_3uKmnnF0nOlLraOEF8QAkuoMZntADBF6QrRYgCtPN8vlv2H9yH2H4ljudUsI"/>
+</div>
+<div class="flex flex-col justify-center p-12 md:p-24 bg-white">
+<span class="text-primary font-bold tracking-widest mb-4">02. 時代精神</span>
+<h3 class="text-4xl md:text-5xl font-bold mb-6 serif-title leading-snug">千里馬銅像</h3>
+<p class="text-slate-600 text-lg leading-relaxed serif-title">
+                        象徵著戰後重建的「千里馬速度」。神話中的天馬展開羽翼，承載著工人與農民奮力向前的英姿，矗立在萬壽台崗之上，象徵著朝鮮人民勇往直前的奮鬥精神與對未來的壯志豪情。
+                    </p>
+</div>
+</section>
+<!-- 3. 人民大學習堂 / 愛情公園 -->
+<section class="py-24 bg-background-light px-6 md:px-20 text-center">
+<div class="max-w-6xl mx-auto">
+<div class="mb-16">
+<span class="text-primary font-bold tracking-widest mb-4 block">03. 建築之美</span>
+<h3 class="text-4xl md:text-5xl font-bold mb-6 serif-title">人民大學習堂 &amp; 愛情公園</h3>
+<p class="text-slate-600 text-lg max-w-3xl mx-auto serif-title">
+                            典型的高麗風格屋頂與現代蘇式基座完美結合，人民大學習堂不僅是學識的殿堂，更是金日成廣場上的視覺焦點。鄰近的愛情公園則是平壤市民漫步休憩的優雅場所。
+                        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group relative overflow-hidden rounded-xl h-[400px]">
+<img alt="Grand People's Study House" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Traditional green-tiled roofs of the Grand People's Study House" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVER0-Wjz8KAMMQMQQvIxjPRk1el6LiUoYrmFr8gXQ9PMDQ592i64j9-Iw0TyRuU1XQGPeCwwknf45UgadrMLWpErfnuCXJS0mWPTE_z5reNtg2Sa1aeaiM6UhtsjF_ZDVsaRutLvTYYbHeHCdH0YAZhZFUfUJrFNeAB5FPgSwUwYuU2BMO5N88kTJ_yC8fmiru32XQMNJo8CRLEiftvNZVI2EEADKO70nLCxrXF-VRdsTOxgGcTjMhEmnruu-kWtbJvIU2a_z7f8"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent text-white text-left">
+<h4 class="text-xl font-bold serif-title">人民大學習堂</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl h-[400px]">
+<img alt="Love Park" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Serene park landscape with water features in Pyongyang" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXbRqU9mbyG3r45m6T4A63oc-w4G9RDukkcQoPE2P-GXAe-EL4t8Qk0andcJEKcvnos5IpgUP9OCDvIos1GZ4pNMcCiEnz-FlrQX-MwjINfRHYb8BhoT40yr4JFYnEfugk8fFFH-6DomWt70sF0sWPqLZGoZK1p3R6UJ6STEnL-pxg5oMi9mzBkp3ca4k8XW4_e7r2TU2dsAeoiAqQJ3_WCSOKMxTNdrcaSDp0AAZNTHoEoE33urDPoo8iN0gtFliYif8Yp6Zf4IY"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent text-white text-left">
+<h4 class="text-xl font-bold serif-title">愛情公園</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. 朝鮮凱旋門 (Arch of Triumph) -->
+<section class="relative h-[600px] flex items-center justify-end">
+<div class="absolute inset-0">
+<img alt="Arch of Triumph" class="w-full h-full object-cover" data-alt="The world's largest triumphal arch in Pyongyang" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAfzGwQ5Fv9ybHVSCOe93HTnsIDj18Vf8GTjIfXlXZ3hMR-luLcJdTWY1TG16-fyg3vUkVq1eEQpGMEui7vPgKGg1V7CMIwdZqEQo3ZN3NFVJfqVdsItTC0mKkk8kz1QhudpyvlmF4nU0hWN5jJ6f_p-pDYyt8yUjFk-Ced1Yx9Lp_KhduQyRmeRPgFOEhmFPYt6Yw_P_Dm7R-El25_Ca9UGxWJemKx5sEQuCYQGuf12dLr5JZ7-p39TmhVDAuceTjqOl8yZSvOkk"/>
+<div class="absolute inset-0 bg-black/30"></div>
+</div>
+<div class="relative z-10 w-full lg:w-1/2 p-12 md:p-24 bg-white/90 backdrop-blur-sm mr-0 lg:mr-20 rounded-l-3xl shadow-2xl">
+<span class="text-primary font-bold tracking-widest mb-4 block">04. 世界之最</span>
+<h3 class="text-4xl font-bold mb-6 serif-title">朝鮮凱旋門</h3>
+<p class="text-slate-600 text-lg leading-relaxed serif-title">
+                        為了慶祝朝鮮領袖凱旋回歸而建，這座凱旋門高度達60米，是目前世界上體積最大的凱旋門。由兩萬五千塊高級白色花崗岩精雕細琢而成，宏闊的氣勢象徵著抗戰歷史的勝利。
+                    </p>
+</div>
+</section>
+<!-- 5. 板門店 (Panmunjom) & 6. 高麗博物館 -->
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-32">
+<div>
+<span class="text-primary font-bold tracking-widest mb-4 block">05. 歷史之眼</span>
+<h3 class="text-4xl font-bold mb-6 serif-title">板門店非軍事區</h3>
+<p class="text-slate-600 text-lg leading-relaxed serif-title mb-8">
+                                全球最受關注的政治邊界。在這裡，您可以親眼看見南北朝鮮交界的藍色談判屋，感受那份肅穆而沉重的歷史張力。這是一趟關於和平、對峙與希望的深度思考之旅。
+                            </p>
+<img alt="Panmunjom" class="rounded-xl shadow-lg w-full h-[300px] object-cover" data-alt="The iconic blue buildings at the Joint Security Area" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB153XWKxM5L1PVSJi2TYIXeADfC-zNslWwC9Z0tMUzJhnMIA788N23RuAwIyp4QjW-cswsIz2WFmp70eAR1bQ0Ev5_o_QenbjX6NkQZYpifiePnvCMLw-zjiiG__63rXemt8JCFHjAnBuHpyWkJ4lNJL6gPVBQjKHr6ksKU099M2K2OsqZK7pl8HPi07zovvofplWl85bFvSur_VfXxGBkN3kdOd94FPlcdStDiIwAvehtlto759gqI6OH1k3Oe3WK1L9IdF-D78A"/>
+</div>
+<div>
+<span class="text-primary font-bold tracking-widest mb-4 block">06. 古都風華</span>
+<h3 class="text-4xl font-bold mb-6 serif-title">高麗博物館</h3>
+<p class="text-slate-600 text-lg leading-relaxed serif-title mb-8">
+                                位於開城。這座曾是高麗王朝成均館的古老建築，保留了傳統的韓式庭園與木造結構。館內收藏了珍貴的陶瓷與歷史文物，是走進高麗王朝千年繁華的時光通道。
+                            </p>
+<img alt="Koryo Museum" class="rounded-xl shadow-lg w-full h-[300px] object-cover" data-alt="Traditional Korean wooden architecture with courtyard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvmU-fRHvUdn9GyOi0LsRwVdmofGO22lW-rbgR2CKMmdSjBx8SY6rzfZvFHVcDiN0Tggs__Phcl0WUKtoS6NK1LuDimM8Rz_4xim_S1Ku9LYkP9vRHhxPYxSOzg1Fw0hNY2M-BN0bIp9oQzpvpvnHNhlQwWThQmjDV5N4ssS7_oGYok8CBgQr9NnSn8GWBM81ORVPLsNe65vfRi8kG-seuxiqXXTWGgIM0rtweCHfOpsh5pqIgKeTbT32dWBXcBLOYTyVQEx2QBRU"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. 萬景台少年宮才藝秀 -->
+<section class="bg-background-dark py-24 text-white overflow-hidden">
+<div class="max-w-6xl mx-auto px-6 flex flex-col items-center">
+<span class="text-primary font-bold tracking-widest mb-4 block">07. 藝術殿堂</span>
+<h3 class="text-4xl md:text-5xl font-bold mb-12 serif-title text-center">萬景台少年宮才藝秀</h3>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-7">
+<div class="aspect-video bg-slate-800 rounded-2xl overflow-hidden shadow-2xl relative">
+<img alt="Children's Palace Show" class="w-full h-full object-cover opacity-80" data-alt="Colorful group dance performance on a large stage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxKeTT57wbuEZ1OVntUesjOXQYtRKY9-95qGBPAIz-QbJdYTxmCrKZZzBweP9iqy5Mu_fArYNZVeRgRXeYMlDWTLVXzdEcxq4y7hUlfLuMZR1OLANJ-yfD3alNQBMc9LImt7RwkxFWCAXdJahl4GsSwYo89GR1bXB8A0pS7Ubv1bUzpX6WwHiqqS4D6VzNg1xIKZ9tJlKFAe0In7RVxDcvMl2PqxCxaYhQ5FxiGhJtDhM2PthK0w7yvhEIrLxsTq-M5Y22AcMayg0"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-white/50">play_circle</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5">
+<p class="text-slate-300 text-lg leading-relaxed serif-title">
+                                見證朝鮮少年非凡的藝術天賦。精湛的器樂合奏、柔美而剛勁的民族舞蹈、完美的特技演出——少年宮的每一場表演都是經過無數次排練而成的文化盛宴，展示了朝鮮對藝術教育的高度追求。
+                            </p>
+<div class="mt-8 flex gap-4">
+<span class="bg-primary/20 text-primary px-4 py-1 rounded-full text-sm font-bold">民族舞蹈</span>
+<span class="bg-primary/20 text-primary px-4 py-1 rounded-full text-sm font-bold">手風琴</span>
+<span class="bg-primary/20 text-primary px-4 py-1 rounded-full text-sm font-bold">合唱</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. 金日成主席故居 (Kim Il Sung's Native House) -->
+<section class="py-24 bg-white relative">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<span class="text-primary font-bold tracking-widest mb-4 block">08. 聖地巡禮</span>
+<h3 class="text-4xl font-bold mb-8 serif-title">萬景台：金日成主席故居</h3>
+<div class="relative rounded-2xl overflow-hidden mb-12 shadow-2xl h-[500px]">
+<img alt="Mangyongdae Native House" class="w-full h-full object-cover" data-alt="Traditional thatched roof house in a serene landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJbcKJ73AI1wvS02WIvNkgdSUpuemoWAwg5rxAJcgrYCjkGdbWIT-gPqIQb5l1rdjE3XtyV8K8iuRwCmvXOMQpTMK5PGmePAt0hxNj7SN5JT0hzoo-HORweJn1IZn41eXVoQluJrIw-DdlQTGWI5ejgQ3SDZMfS1swusFptr-0vhVz8X5WBApaWe4XsGA33kXKqVm_WnOnzY8cQ6OC1K0j--HbV5NWzUbqHA1XQC9hXqKR80weGiO579Nq87i9ZllwJ_Wf6pxKXUw"/>
+</div>
+<p class="text-slate-600 text-xl leading-relaxed serif-title max-w-2xl mx-auto italic">
+                        「萬景台，因能飽覽萬種美景而得名。」
+                    </p>
+<p class="text-slate-600 text-lg leading-relaxed mt-6 serif-title">
+                        這處靜謐的茅草小屋是朝鮮領袖的誕生之地。保留了原始的農村生活樣貌與農具，蒼翠的古松與清澈的井水交織成一副恬靜的田園畫卷，是朝鮮人民心中永恆的精神原點。
+                    </p>
+</div>
+</section>
+<!-- Footer -->
+
+</div>
+<footer id="contact-footer" class="bg-gray-900 text-white pt-16 md:pt-24 pb-8 border-t border-gray-800 mt-auto">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="material-symbols-outlined text-3xl text-primary">flight_takeoff</span>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold tracking-widest">朝鮮假期</span>
+                        <span class="text-[10px] text-gray-400 tracking-wider uppercase">Air Koryo Taiwan Agent</span>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 font-light">
+                    高麗航空台灣總代理，專注於朝鮮旅遊二十餘年。致力於提供最專業、安全、深度的旅遊體驗。
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <span class="font-bold text-xs">FB</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <span class="font-bold text-xs">IG</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <span class="font-bold text-xs">LINE</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6 tracking-widest border-b border-gray-700 pb-2 inline-block">關於我們</h4>
+                <ul class="space-y-4 text-sm text-gray-400 font-light">
+                    <li><a href="about.html" class="hover:text-white transition-colors">品牌故事</a></li>
+                    <li><a href="itinerary.html" class="hover:text-white transition-colors">精選行程</a></li>
+                    <li><a href="visa.html" class="hover:text-white transition-colors">簽證辦理</a></li>
+                    <li><a href="metro.html" class="hover:text-white transition-colors">平壤地鐵特別企劃</a></li>
+                </ul>
+            </div>
+            <div class="lg:col-span-2">
+                <h4 class="text-lg font-bold mb-6 tracking-widest border-b border-gray-700 pb-2 inline-block">聯絡與代理資訊</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm text-gray-400 font-light">
+                    <div class="flex flex-col gap-2">
+                        <span class="text-white font-medium">台北總公司</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">location_on</span> 台北市中山區南京東路</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span> (02) 2515-8500</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-white font-medium">高雄分公司</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">location_on</span> 高雄市前金區中正四路</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span> (07) 215-6788</span>
+                    </div>
+                    <div class="flex flex-col gap-2 border-t pt-6 sm:border-t-0 sm:pt-0 sm:border-l sm:border-gray-800 sm:pl-6">
+                        <span class="text-white font-medium">指定代理商</span>
+                        <ul class="space-y-1 text-xs">
+                            <li>東南旅遊</li>
+                            <li>雄獅旅遊</li>
+                            <li>可樂旅遊</li>
+                            <li>鳳凰旅遊</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-gray-500 font-light tracking-wide">
+                © 2024 Air Koryo Taiwan Agent. All rights reserved. 交觀甲第0000號 品保北0000號
+            </p>
+            <div class="flex gap-6 text-xs text-gray-500">
+                <a href="#" class="hover:text-white transition-colors">網站地圖</a>
+                <a href="#" class="hover:text-white transition-colors">免責聲明</a>
+                <a href="#" class="hover:text-white transition-colors">隱私權政策</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating LINE Button -->
+<a href="https://line.me/R/ti/p/@000qngjp?oat_content=url&amp;ts=11192309" target="_blank" class="hidden md:flex fixed bottom-10 right-10 z-50 bg-[#06C755] hover:bg-emerald-600 text-white px-6 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all items-center gap-3 animate-bounce">
+    <i class="fa-brands fa-line text-3xl"></i>
+    <span class="text-lg tracking-widest">專人諮詢</span>
+</a>
+
+</body>
+</html>

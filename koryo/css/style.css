@@ -1,0 +1,17 @@
+body { font-family: 'Noto Sans TC', sans-serif; background-color: #fcfcfc; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Noto Serif TC', serif; }
+.text-vertical { writing-mode: vertical-rl; text-orientation: mixed; }
+.fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.magazine-shadow { box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1), 0 10px 20px -5px rgba(0, 0, 0, 0.04); }
+.serif-text, .serif-title { font-family: 'Noto Serif TC', serif; }
+:root { --primary-blue: #B91C1C; --primary-red: #B91C1C; --elegant-gray: #4B5563; }
+.text-vertical-rl { writing-mode: vertical-rl; text-orientation: mixed; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+.bg-background-light { background-color: #fcfcfc; }
+.bg-background-dark { background-color: #1a1a1a; }
+.text-text-main { color: #222222; }
+.text-text-secondary { color: #666666; }

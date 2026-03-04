@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>關於朝鮮 - 朝鮮假期</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body class="bg-stone-50 text-gray-800 antialiased overflow-x-hidden selection:bg-primary selection:text-white flex flex-col min-h-screen">
+
+<!-- Mobile Menu Toggle & Overlay -->
+<input class="peer hidden" id="mobile-menu-toggle" type="checkbox"/>
+<div class="fixed inset-0 bg-black/50 z-40 hidden peer-checked:block lg:hidden transition-opacity"></div>
+<div class="fixed top-0 right-0 w-[70%] h-full bg-white z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 lg:hidden shadow-2xl flex flex-col p-6 overflow-y-auto">
+    <div class="flex justify-end mb-8">
+        <label class="cursor-pointer p-2 rounded-full hover:bg-gray-100" for="mobile-menu-toggle">
+            <span class="material-symbols-outlined text-3xl text-gray-800">close</span>
+        </label>
+    </div>
+    <nav class="flex flex-col gap-6 text-lg font-medium text-gray-700">
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="index.html">首頁</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="about.html">關於朝鮮</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="nature.html">自然人文</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="landmarks.html">經典地標</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="experience.html">深度體驗</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="itinerary.html">行程攻略</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="visa.html">簽證資訊</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="metro.html">平壤地鐵</a>
+    </nav>
+    <div class="mt-auto pt-8 border-t border-gray-200">
+        <div class="flex flex-col gap-2 text-sm text-gray-500">
+            <span>台北總代理</span>
+            <span>(02) 2515-8500</span>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="w-full z-30 bg-white/95 backdrop-blur-sm border-b border-stone-200 transition-all duration-300 sticky top-0">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white shrink-0 shadow-sm group-hover:bg-primary-dark transition-colors duration-500">
+                    <span class="material-symbols-outlined text-2xl">flight_takeoff</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-lg md:text-xl font-bold tracking-widest text-gray-900 leading-none group-hover:text-primary transition-colors">朝鮮假期</span>
+                    <span class="text-[10px] md:text-xs text-gray-500 tracking-wider uppercase mt-1">Air Koryo Taiwan Agent</span>
+                </div>
+            </a>
+            
+            <nav class="hidden lg:flex items-center gap-6 xl:gap-8">
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="index.html">首頁</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="about.html">關於朝鮮</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="nature.html">自然人文</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="landmarks.html">經典地標</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="experience.html">深度體驗</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="itinerary.html">行程攻略</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="visa.html">簽證資訊</a>
+            </nav>
+            
+            <div class="lg:hidden">
+                <label class="cursor-pointer p-2 rounded-md hover:bg-gray-100 flex items-center justify-center" for="mobile-menu-toggle">
+                    <span class="material-symbols-outlined text-3xl text-gray-800">menu</span>
+                </label>
+            </div>
+            <div class="hidden lg:block">
+                <a href="https://line.me/R/ti/p/@000qngjp?oat_content=url&amp;ts=11192309" target="_blank" class="bg-gray-900 text-white px-6 py-2 text-sm tracking-widest hover:bg-primary transition-colors duration-300 rounded shadow-lg flex items-center gap-2">
+                    <i class="fa-brands fa-line text-lg"></i> 立即預訂
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="flex-grow flex flex-col w-full relative">
+<main class="flex-grow pt-16">
+<section class="relative w-full h-[95vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/30 z-10"></div>
+<div class="w-full h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAniFQzyQdro_OXn_F_SIgdbxDQApn6AsnRBK7M6mnUXy-TFCK1zRu86hmG2d-yf1TbOCj8Abg69cwbDbl91idztsxn9uqOdMBH_ih-VFZvM9NevYteUYICUAJ-jM_h-os2nKmt1nbOJsVWrUvNREqZUlSXtaZvoqaJETNXawmav2sIbMHhKcPVmXeJVvcQjJydmZmGzOhnPTH0MmSyFg_O-ox-9hxmBjRGUP0LEtDm-qsL5ugrVKdvscCdiOaea_laH_cD7RRfJdI");'></div>
+</div>
+<div class="relative z-20 container mx-auto px-6 h-full flex flex-col justify-center items-center text-center">
+<div class="mb-6 opacity-0 animate-[fadeInUp_1s_ease-out_0.5s_forwards]">
+<span class="inline-block py-1 px-4 border border-white/40 bg-white/5 backdrop-blur-sm text-white text-xs font-medium tracking-[0.3em] uppercase">Discovery Issue No. 01</span>
+</div>
+<h1 class="font-display text-white text-5xl md:text-7xl lg:text-9xl font-light tracking-wide mb-8 opacity-0 animate-[fadeInUp_1s_ease-out_0.8s_forwards] leading-tight">
+<span class="block text-2xl md:text-3xl font-light tracking-[0.5em] mb-4 opacity-80">神祕面紗</span>
+<span class="block font-medium">鮮為人知的朝鮮</span>
+</h1>
+<div class="w-16 h-[1px] bg-white/60 my-8 opacity-0 animate-[fadeInUp_1s_ease-out_1.1s_forwards]"></div>
+<p class="text-white/90 text-lg md:text-xl font-light max-w-xl mx-auto leading-relaxed tracking-wide opacity-0 animate-[fadeInUp_1s_ease-out_1.4s_forwards]">
+                        跨越邊界，打破刻板印象。<br class="hidden md:block"/>在歷史與現代交織的平壤，見證一個真實而深邃的國度。
+                    </p>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-0 animate-[fadeInUp_1s_ease-out_1.8s_forwards]">
+<div class="flex flex-col items-center gap-2 text-white/60">
+<span class="text-[10px] tracking-widest uppercase">Scroll to Explore</span>
+<span class="material-symbols-outlined animate-bounce">expand_more</span>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 md:py-36 bg-white relative overflow-hidden">
+<div class="absolute top-20 right-6 md:right-12 hidden lg:block opacity-5 pointer-events-none">
+<span class="font-display text-9xl text-vertical font-bold text-black tracking-widest">LEADERSHIP</span>
+</div>
+<div class="container mx-auto px-6 md:px-12 relative z-10">
+<div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
+<div class="lg:w-7/12">
+<div class="relative">
+<div class="relative overflow-hidden shadow-2xl aspect-[16/9] group">
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10"></div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6E6AR2LpKmzQk9cIMEBjuHsHhNgY_Yd0ujVCUgAPHEPFGFJ0Lecv1rAkOF95_I0pvFsSD5xdynCPqFqJVhskSEeJaPafXFBeCcvC_dvSz9UI-YEAv9wk5vOxxoLpqD7sB1L5ZJwEp2hKIjB84tlrTOPGO6lx7H5tM0HSwoSaCNVqZ40BHJ-9NfRCFO5XtIVrye9JuoWnaOgr2YbFLBTfBfpuZoR1r4C6-i7Y0Adqpp1gPdJeENbLTov2B-CdEDtSKcyhl1Gv0rkc");'></div>
+</div>
+<div class="absolute -bottom-6 -right-6 md:-right-12 bg-white p-6 shadow-xl max-w-xs border-l-2 border-primary hidden md:block">
+<p class="font-display text-sm text-gray-800 leading-relaxed">
+<span class="block font-bold mb-1">國家盛典</span>
+                                        萬眾一心的集體力量展現，平壤金日成廣場。
+                                    </p>
+</div>
+</div>
+</div>
+<div class="lg:w-5/12 flex flex-col justify-center">
+<span class="text-primary text-xs font-bold tracking-widest uppercase mb-4">National Identity</span>
+<h2 class="font-display text-4xl md:text-5xl lg:text-6xl text-text-main mb-8 leading-[1.2]">
+                                大國朝鮮的<br/>
+<span class="text-primary italic font-serif">領導魅力</span>
+</h2>
+<div class="w-12 h-0.5 bg-black mb-8"></div>
+<p class="text-text-muted text-lg leading-relaxed font-light mb-8 text-justify font-display">
+                                國家穩定的核心在於堅強的領導體制。<br/><br/>
+                                在金正恩委員長的領導下，朝鮮展現出前所未有的團結與穩定。<br/><br/>
+                                透過盛大的國家儀式與現代化建設，不僅彰顯了國家的尊嚴，更凝聚了人民的向心力。
+                            </p>
+<p class="text-text-main font-display text-xl italic opacity-80 border-l-4 border-gray-200 pl-6 py-2">
+                                "以民為天，一心團結，這是一種獨特的社會凝聚力。"
+                            </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-[#f8f5f5]">
+<div class="container mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-4 pr-8">
+<h2 class="font-display text-3xl md:text-4xl font-bold text-text-main mb-6">社會體制優勢</h2>
+<p class="text-text-muted mb-8 font-light leading-relaxed">
+                                朝鮮社會主義體制的三大支柱，保障人民的基本生活需求，展現以人為本的政策導向。從搖籃到終老，國家承擔起照護責任。
+                            </p>
+<a class="inline-flex items-center text-primary font-medium hover:text-primary-dark transition-colors group text-sm tracking-wide" href="#">
+                                深入了解體制
+                                <span class="material-symbols-outlined ml-2 text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.1)] transition-all duration-300 border-t-2 border-transparent hover:border-primary group h-full flex flex-col">
+<div class="mb-6 text-gray-400 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-4xl font-light">apartment</span>
+</div>
+<h3 class="font-display text-xl font-bold mb-3 text-text-main">無償分配住宅</h3>
+<p class="text-text-muted text-sm font-light leading-relaxed flex-grow">
+                                    國家統一建設並免費分配現代化住宅，實施住房全免政策。
+                                </p>
+</div>
+<div class="bg-white p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.1)] transition-all duration-300 border-t-2 border-transparent hover:border-primary group h-full flex flex-col">
+<div class="mb-6 text-gray-400 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-4xl font-light">school</span>
+</div>
+<h3 class="font-display text-xl font-bold mb-3 text-text-main">普遍義務教育</h3>
+<p class="text-text-muted text-sm font-light leading-relaxed flex-grow">
+                                    實施12年無償義務教育，學費全免，國家提供校服、課本。
+                                </p>
+</div>
+<div class="bg-white p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.1)] transition-all duration-300 border-t-2 border-transparent hover:border-primary group h-full flex flex-col">
+<div class="mb-6 text-gray-400 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-4xl font-light">stethoscope</span>
+</div>
+<h3 class="font-display text-xl font-bold mb-3 text-text-main">無償醫療制度</h3>
+<p class="text-text-muted text-sm font-light leading-relaxed flex-grow">
+                                    全民享有免費醫療服務，從預防到治療皆由國家負擔，建立覆蓋城鄉的完整衛生網。
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="relative bg-background-dark text-white overflow-hidden">
+<div class="relative h-[80vh] min-h-[600px] w-full">
+<div class="absolute inset-0 bg-cover bg-fixed bg-center opacity-60" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDd1ktRjNnIQZ6gPbHGZsV2NH7ZmR_huVP_Fac0zP2P0NuCrTcpVjP0EHIPczuhmOar3ULTndsweUCVQW4IeTpqMlQlBw_Qhd_Mo1mUMR6kAEFgxf0TLCzvUtkIOykG2sEUznP22cysehOBw3zK4UVCaNSTNQ3ujpyYsCVQi7mSE0DkZXU7AJp55bQVa5jnd2jYGrEp92VymI319pinq3-tk0rrQygxbqF_GQ3pCAqBqgKYrmW9W6JujA_hKA-08i1xj8cDE7Ojens");'></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background-dark/20 to-background-dark"></div>
+<div class="absolute inset-0 flex items-center justify-center p-6">
+<div class="text-center max-w-4xl relative z-10">
+<span class="text-white/70 font-display italic text-2xl mb-4 block">Landscape &amp; Seasons</span>
+<h2 class="font-display text-5xl md:text-7xl font-light tracking-wide mb-6">
+                                美哉山川生態
+                            </h2>
+<p class="text-xl font-light text-white/80 max-w-2xl mx-auto leading-relaxed">
+                                80% 的壯麗山巒，四季分明。從金剛山的奇岩怪石到白頭山的天池聖境，未經雕琢的原始生態是這片土地最珍貴的寶藏。
+                            </p>
+</div>
+</div>
+</div>
+<div class="container mx-auto px-6 md:px-12 pb-24 -mt-32 relative z-20">
+<div class="bg-[#1a1a1a] border border-gray-800 p-10 md:p-16 rounded-sm shadow-2xl flex flex-col lg:flex-row gap-12 items-center">
+<div class="lg:w-1/2">
+<div class="flex items-center gap-3 mb-4">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span class="text-primary text-xs font-bold tracking-widest uppercase">Ecological Sanctuary</span>
+</div>
+<h3 class="font-display text-3xl md:text-4xl text-white mb-6">神祕避難所：DMZ</h3>
+<p class="text-gray-400 leading-relaxed font-light mb-8">
+                                橫跨半島的非軍事區（DMZ），因人跡罕至意外成為了野生動植物的天堂。這裡是瀕危物種如丹頂鶴（Red-crowned Cranes）與亞洲黑熊的最後淨土，展現了生命在靜謐中的強韌力量。
+                            </p>
+<div class="flex items-center gap-6">
+<div class="text-center">
+<span class="block text-2xl font-display text-white mb-1">200+</span>
+<span class="text-xs text-gray-500 uppercase tracking-wide">Rare Species</span>
+</div>
+<div class="h-10 w-[1px] bg-gray-700"></div>
+<div class="text-center">
+<span class="block text-2xl font-display text-white mb-1">60yr</span>
+<span class="text-xs text-gray-500 uppercase tracking-wide">Untouched</span>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 w-full grid grid-cols-2 gap-4">
+<div class="aspect-[4/3] bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9BpFrkcKLfyGFpuN3gTbyd6EG83nuujc_D9FbeMNCbwVc_hFOS642U2r8pi8higWP2cuE6kxKB3MUnvlS696nml7ZYK_YviaGAeSGU-tyBVgiMh3pLlIpUYvd3Ay0sIrmbrzwYRZgn8QGn7O9La4sSJGlpt7PSaznWZXX6Xl-KAorc1dWy1dz7PFVjf6vWyLiMArMJC02EUwB27NguF_7-yFLrjhq9pmIPobPbyizBdqBUBBv-V2fXe7XnqnTGWJnVireqO0oPmE");'></div>
+<div class="aspect-[4/3] bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700 translate-y-8" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAssiOPKUw_VU65hUVwyHp_ABUAqZtnULve5WBTmC_anleX-E5ZCspmV5c8SF6VCUWdZo5pB7q95r_8bUtOIBIBH6NRVzupDIflNu8s3MLATMQlW4aGGpwD1X_g8vnJo2zlQiMxgZREIXapJt0cxv4w4bu2k4IwKpdTERKtPL3_rb9mW8BoMxNJUL3aDDbNQNBqgjv-HAWWxN721q2saRQOd2Mvn1l4IAXZsdg1aDSURxSR0D2S4L_0D8FF2OXj6gAKxvSILGS-kzQ");'></div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white border-b border-gray-100">
+<div class="container mx-auto px-6 md:px-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<span class="text-gray-400 font-serif italic text-lg mb-2 block">The Capital</span>
+<h2 class="font-display text-4xl md:text-6xl text-text-main font-light tracking-tight">首都印象：平壤</h2>
+</div>
+<div class="md:text-right">
+<p class="text-text-muted text-sm font-light max-w-xs md:ml-auto mb-4">
+                                250 萬人口的現代化都市，宏大的規劃尺度與整潔市容。展示社會主義文明建設的櫥窗。
+                            </p>
+<a class="text-primary text-sm font-bold tracking-widest uppercase hover:underline underline-offset-4 decoration-primary" href="#">View City Map</a>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 h-auto">
+<div class="lg:col-span-4 flex flex-col gap-8">
+<div class="relative group overflow-hidden h-80 w-full">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDY1hzj24jT6pPfsvmY8NbL13NDEF522xWzAotrkUkeN8hEtQe8JVw-NO_3YAttN-eelt9IZhO3oJ6lQLe4aBUEYhrM8gAbwO_5qzzgZ2ctVBszeybyj19QP0rKF6B18DiWq0joMMMu6sPU_S8wadi-GSzhHQoazgbRgekbj-1fjIH4EL8Lxhsxl--STimMuWr2GKAUb3vkj6HWsfdIILoGcLveYrYIeTA8Z82YEBte6rPn6YpuYCbSL_E9YTIkvmoZpxycH1QmgTc");'></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
+<div class="absolute bottom-6 left-6 text-white flex flex-col">
+<h4 class="font-display text-xl font-medium mb-1">平壤地鐵</h4>
+<p class="text-xs uppercase tracking-widest opacity-80">Underground Palace</p>
+<a class="mt-4 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-white/90 hover:text-white transition-colors group/link" href="#">
+<span>查看地底宮殿深度介紹</span>
+<span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a></div>
+</div>
+<div class="border border-gray-200 p-8 flex flex-col justify-between flex-grow bg-gray-50">
+<div class="mb-4">
+<span class="material-symbols-outlined text-4xl text-gray-300 mb-4">map</span>
+<h4 class="font-display text-lg text-text-main font-bold">城市規劃</h4>
+<p class="text-xs text-gray-500 mt-2 leading-relaxed">
+                                        平壤的城市佈局呈現出高度的對稱性與宏偉感，主要街道寬闊筆直，地標建築座落於視覺軸線上。
+                                    </p>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-8 pt-8 border-t border-gray-200">
+<div>
+<div class="text-2xl font-display font-light">40%</div>
+<div class="text-[10px] uppercase text-gray-500 tracking-wider">Green Space</div>
+</div>
+<div>
+<div class="text-2xl font-display font-light">2.5M</div>
+<div class="text-[10px] uppercase text-gray-500 tracking-wider">Population</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 relative h-[500px] lg:h-auto">
+<div class="w-full h-full bg-cover bg-center grayscale-[20%] hover:grayscale-0 transition-all duration-700" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDbCjcJ1AHjE94Da5gb2fKDo87iX3unHozp010lbFTgIEGubwn4cjT5N38uFjZgDxOa95OKP246I7TmcJlMmO1Ji1eogwDLb63Ht3OinPehYwtxKfhQbkpI47qPrPo1ZKk7vcBG4e5phfN9oZQDw2Jgg_70RbtKYLXH3i4q9ZWtW32ytMBACRq5tA93qzq3R00ALIPMZ8s-OLsxh3SOjQZoRKEhj4706MADiMQ1yo7BHX5tOFxEaC84al4RMIE_fEJLQZZuPJ487ts");'></div>
+<div class="absolute top-8 left-8 bg-white/90 backdrop-blur px-6 py-4 max-w-xs shadow-sm">
+<h3 class="font-display text-xl text-black font-medium">精密建築美學</h3>
+<p class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Modern &amp; Monumental</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer id="contact-footer" class="bg-gray-900 text-white pt-16 md:pt-24 pb-8 border-t border-gray-800 mt-auto">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="material-symbols-outlined text-3xl text-primary">flight_takeoff</span>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold tracking-widest">朝鮮假期</span>
+                        <span class="text-[10px] text-gray-400 tracking-wider uppercase">Air Koryo Taiwan Agent</span>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 font-light">
+                    高麗航空台灣總代理，專注於朝鮮旅遊二十餘年。致力於提供最專業、安全、深度的旅遊體驗。
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <span class="font-bold text-xs">FB</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <span class="font-bold text-xs">IG</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <span class="font-bold text-xs">LINE</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6 tracking-widest border-b border-gray-700 pb-2 inline-block">關於我們</h4>
+                <ul class="space-y-4 text-sm text-gray-400 font-light">
+                    <li><a href="about.html" class="hover:text-white transition-colors">品牌故事</a></li>
+                    <li><a href="itinerary.html" class="hover:text-white transition-colors">精選行程</a></li>
+                    <li><a href="visa.html" class="hover:text-white transition-colors">簽證辦理</a></li>
+                    <li><a href="metro.html" class="hover:text-white transition-colors">平壤地鐵特別企劃</a></li>
+                </ul>
+            </div>
+            <div class="lg:col-span-2">
+                <h4 class="text-lg font-bold mb-6 tracking-widest border-b border-gray-700 pb-2 inline-block">聯絡與代理資訊</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm text-gray-400 font-light">
+                    <div class="flex flex-col gap-2">
+                        <span class="text-white font-medium">台北總公司</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">location_on</span> 台北市中山區南京東路</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span> (02) 2515-8500</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-white font-medium">高雄分公司</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">location_on</span> 高雄市前金區中正四路</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span> (07) 215-6788</span>
+                    </div>
+                    <div class="flex flex-col gap-2 border-t pt-6 sm:border-t-0 sm:pt-0 sm:border-l sm:border-gray-800 sm:pl-6">
+                        <span class="text-white font-medium">指定代理商</span>
+                        <ul class="space-y-1 text-xs">
+                            <li>東南旅遊</li>
+                            <li>雄獅旅遊</li>
+                            <li>可樂旅遊</li>
+                            <li>鳳凰旅遊</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-gray-500 font-light tracking-wide">
+                © 2024 Air Koryo Taiwan Agent. All rights reserved. 交觀甲第0000號 品保北0000號
+            </p>
+            <div class="flex gap-6 text-xs text-gray-500">
+                <a href="#" class="hover:text-white transition-colors">網站地圖</a>
+                <a href="#" class="hover:text-white transition-colors">免責聲明</a>
+                <a href="#" class="hover:text-white transition-colors">隱私權政策</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating LINE Button -->
+<a href="https://line.me/R/ti/p/@000qngjp?oat_content=url&amp;ts=11192309" target="_blank" class="hidden md:flex fixed bottom-10 right-10 z-50 bg-[#06C755] hover:bg-emerald-600 text-white px-6 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all items-center gap-3 animate-bounce">
+    <i class="fa-brands fa-line text-3xl"></i>
+    <span class="text-lg tracking-widest">專人諮詢</span>
+</a>
+
+</body>
+</html>

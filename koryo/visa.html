@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>簽證資訊 - 朝鮮假期</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body class="bg-stone-50 text-gray-800 antialiased overflow-x-hidden selection:bg-primary selection:text-white flex flex-col min-h-screen">
+
+<!-- Mobile Menu Toggle & Overlay -->
+<input class="peer hidden" id="mobile-menu-toggle" type="checkbox"/>
+<div class="fixed inset-0 bg-black/50 z-40 hidden peer-checked:block lg:hidden transition-opacity"></div>
+<div class="fixed top-0 right-0 w-[70%] h-full bg-white z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 lg:hidden shadow-2xl flex flex-col p-6 overflow-y-auto">
+    <div class="flex justify-end mb-8">
+        <label class="cursor-pointer p-2 rounded-full hover:bg-gray-100" for="mobile-menu-toggle">
+            <span class="material-symbols-outlined text-3xl text-gray-800">close</span>
+        </label>
+    </div>
+    <nav class="flex flex-col gap-6 text-lg font-medium text-gray-700">
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="index.html">首頁</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="about.html">關於朝鮮</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="nature.html">自然人文</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="landmarks.html">經典地標</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="experience.html">深度體驗</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="itinerary.html">行程攻略</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="visa.html">簽證資訊</a>
+        <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="metro.html">平壤地鐵</a>
+    </nav>
+    <div class="mt-auto pt-8 border-t border-gray-200">
+        <div class="flex flex-col gap-2 text-sm text-gray-500">
+            <span>台北總代理</span>
+            <span>(02) 2515-8500</span>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="w-full z-30 bg-white/95 backdrop-blur-sm border-b border-stone-200 transition-all duration-300 sticky top-0">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white shrink-0 shadow-sm group-hover:bg-primary-dark transition-colors duration-500">
+                    <span class="material-symbols-outlined text-2xl">flight_takeoff</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-lg md:text-xl font-bold tracking-widest text-gray-900 leading-none group-hover:text-primary transition-colors">朝鮮假期</span>
+                    <span class="text-[10px] md:text-xs text-gray-500 tracking-wider uppercase mt-1">Air Koryo Taiwan Agent</span>
+                </div>
+            </a>
+            
+            <nav class="hidden lg:flex items-center gap-6 xl:gap-8">
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="index.html">首頁</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="about.html">關於朝鮮</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="nature.html">自然人文</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="landmarks.html">經典地標</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="experience.html">深度體驗</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="itinerary.html">行程攻略</a>
+                <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full" href="visa.html">簽證資訊</a>
+            </nav>
+            
+            <div class="lg:hidden">
+                <label class="cursor-pointer p-2 rounded-md hover:bg-gray-100 flex items-center justify-center" for="mobile-menu-toggle">
+                    <span class="material-symbols-outlined text-3xl text-gray-800">menu</span>
+                </label>
+            </div>
+            <div class="hidden lg:block">
+                <a href="https://line.me/R/ti/p/@000qngjp?oat_content=url&amp;ts=11192309" target="_blank" class="bg-gray-900 text-white px-6 py-2 text-sm tracking-widest hover:bg-primary transition-colors duration-300 rounded shadow-lg flex items-center gap-2">
+                    <i class="fa-brands fa-line text-lg"></i> 立即預訂
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="flex-grow flex flex-col w-full relative">
+<main class="flex-grow">
+<section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-white">
+<div class="absolute inset-0 z-0">
+<img alt="Passport and Documents" class="w-full h-full object-cover opacity-90 object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFA8IjLtLlKYESzXHkey7j8kYFzkKUB4Kmt5Qb_F-_rTRhqCl_DyzjFHXQBaYv3LOdceQ8XirffT0dPnmRwt82iCwXRnyf1DnXMCxDM4F147ukUPquCwf2RRb5XMfNWaHoP9XMv2lyMqOC5B8HV5RiPSklASEjBhycF81krYZOneD_gEES5duzLyeJDHw563zITwlugHWh45wVwJsVIyGh7ti_7dMkzHXcMMY5asB8F-4ZNZcZzvyTcO-52FY5yQx2Jy0eH9vZJiE"/>
+<div class="absolute inset-0 bg-white/60 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 max-w-5xl mx-auto px-6 text-center pt-20">
+<span class="inline-block py-1 px-3 border border-text-main text-text-main text-xs font-bold mb-8 tracking-[0.2em] uppercase">Paperless Visa Service</span>
+<h1 class="font-display text-5xl md:text-7xl font-bold mb-6 text-text-main leading-tight">
+                簽證辦理<br/>
+<span class="text-primary block mt-2">全球唯一便捷流程</span>
+</h1>
+<p class="font-sans text-lg text-text-secondary max-w-2xl mx-auto font-light leading-relaxed mb-10">
+                無須寄送實體護照，免去繁瑣流程。<br/>
+                打造了前往朝鮮最流暢的簽證通道，讓您專注於期待即將展開的神祕旅程。
+            </p>
+</div>
+</section>
+<section class="py-24 bg-background-light relative">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16">
+<div>
+<h2 class="font-display text-3xl font-bold text-text-main mb-2">準備資料</h2>
+<p class="text-text-secondary font-light">僅需準備以下三樣電子檔案，輕鬆完成申請</p>
+</div>
+<div class="hidden md:block w-32 h-[1px] bg-gray-300 mb-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group bg-white p-8 border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-20 h-20 bg-gray-50 rounded-bl-full -mr-10 -mt-10 transition-colors group-hover:bg-primary/5"></div>
+<div class="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined">badge</span>
+</div>
+<h3 class="font-display text-xl font-bold text-text-main mb-3">護照數位檔</h3>
+<p class="text-sm text-gray-500 font-light leading-relaxed mb-4">
+                        請提供護照資料頁（有照片面）的彩色掃描檔或清晰翻拍。效期需在出發日後六個月以上。
+                    </p>
+<ul class="text-xs text-gray-400 space-y-1">
+<li class="flex items-center gap-1"><span class="material-symbols-outlined text-[10px]">check_circle</span> 不需寄送正本</li>
+<li class="flex items-center gap-1"><span class="material-symbols-outlined text-[10px]">check_circle</span> JPG / PDF 格式</li>
+</ul>
+</div>
+<div class="group bg-white p-8 border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-20 h-20 bg-gray-50 rounded-bl-full -mr-10 -mt-10 transition-colors group-hover:bg-primary/5"></div>
+<div class="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined">perm_identity</span>
+</div>
+<h3 class="font-display text-xl font-bold text-text-main mb-3">台胞證數位檔</h3>
+<p class="text-sm text-gray-500 font-light leading-relaxed mb-4">
+                        經由中國中轉必備。請提供有效期限內的台胞證正反面彩色掃描檔。
+                    </p>
+<ul class="text-xs text-gray-400 space-y-1">
+<li class="flex items-center gap-1"><span class="material-symbols-outlined text-[10px]">check_circle</span> 確保字跡清晰</li>
+<li class="flex items-center gap-1"><span class="material-symbols-outlined text-[10px]">check_circle</span> 正反面分開或合併皆可</li>
+</ul>
+</div>
+<div class="group bg-white p-8 border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-20 h-20 bg-gray-50 rounded-bl-full -mr-10 -mt-10 transition-colors group-hover:bg-primary/5"></div>
+<div class="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined">face</span>
+</div>
+<h3 class="font-display text-xl font-bold text-text-main mb-3">個人證件照</h3>
+<p class="text-sm text-gray-500 font-light leading-relaxed mb-4">
+                        近期拍攝的兩吋彩色證件照電子檔（白底為佳）。將用於簽證製作。
+                    </p>
+<ul class="text-xs text-gray-400 space-y-1">
+<li class="flex items-center gap-1"><span class="material-symbols-outlined text-[10px]">check_circle</span> 半身正面脫帽</li>
+<li class="flex items-center gap-1"><span class="material-symbols-outlined text-[10px]">check_circle</span> 高解析度電子檔</li>
+</ul>
+</div>
+</div>
+<div class="mt-12 p-6 bg-white border-l-4 border-accent shadow-sm flex items-start gap-4">
+<span class="material-symbols-outlined text-accent text-3xl shrink-0 mt-1">priority_high</span>
+<div>
+<h4 class="font-bold text-text-main mb-1">身份申報特別說明</h4>
+<p class="text-sm text-text-secondary font-light leading-relaxed">
+                        若您的職業身份為<strong class="text-primary font-medium">軍人、警察、記者或媒體從業人員</strong>，請務必在報名諮詢時主動告知。此類身份需經過特殊審核流程，若未誠實申報可能導致簽證遭拒或無法入境，相關責任需自行承擔。
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white border-b border-gray-100">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="text-center mb-20">
+<span class="text-primary font-bold tracking-[0.2em] text-sm uppercase">Process</span>
+<h2 class="font-display text-4xl font-bold text-text-main mt-3">簡單三步驟</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+<div class="hidden md:block absolute top-8 left-[16%] right-[16%] h-[2px] bg-gray-100 z-0"></div>
+<div class="relative z-10 text-center group">
+<div class="w-16 h-16 mx-auto bg-white border border-gray-200 rounded-full flex items-center justify-center text-xl font-display font-bold text-gray-300 shadow-sm mb-6 group-hover:border-primary group-hover:text-primary transition-colors duration-300">
+                        01
+                    </div>
+<h3 class="font-bold text-xl text-text-main mb-3">備妥檔案</h3>
+<p class="text-gray-500 text-sm font-light leading-relaxed px-4">
+                        將護照、台胞證及照片電子檔準備齊全，確認畫質清晰無反光。
+                    </p>
+</div>
+<div class="relative z-10 text-center group">
+<div class="w-16 h-16 mx-auto bg-white border border-gray-200 rounded-full flex items-center justify-center text-xl font-display font-bold text-gray-300 shadow-sm mb-6 group-hover:border-primary group-hover:text-primary transition-colors duration-300">
+                        02
+                    </div>
+<h3 class="font-bold text-xl text-text-main mb-3">線上傳送</h3>
+<p class="text-gray-500 text-sm font-light leading-relaxed px-4">
+                        加入官方 LINE 或 WeChat，將檔案直接傳送給專屬旅遊顧問。
+                    </p>
+</div>
+<div class="relative z-10 text-center group">
+<div class="w-16 h-16 mx-auto bg-white border border-gray-200 rounded-full flex items-center justify-center text-xl font-display font-bold text-gray-300 shadow-sm mb-6 group-hover:border-primary group-hover:text-primary transition-colors duration-300">
+                        03
+                    </div>
+<h3 class="font-bold text-xl text-text-main mb-3">極速核證</h3>
+<p class="text-gray-500 text-sm font-light leading-relaxed px-4">
+                        通常僅需 3-5 個工作日即可核發。您將在出發前收到簽證確認，另紙簽證將於集合時發放。
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-light">
+<div class="max-w-[1000px] mx-auto px-6">
+<div class="flex flex-col md:flex-row items-baseline gap-4 mb-12 border-b border-gray-200 pb-6">
+<h2 class="font-display text-4xl font-bold text-text-main">朝鮮簽證 FAQ</h2>
+<span class="text-primary font-bold tracking-[0.1em] text-sm uppercase">Common Questions</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+<h3 class="font-bold text-lg text-text-main mb-3 flex items-start gap-3">
+<span class="text-primary font-display text-xl">Q.</span>
+                        雙重國籍是否可以辦理？
+                    </h3>
+<p class="text-text-secondary text-sm font-light leading-relaxed pl-8 border-l-2 border-gray-100">
+                        可以。若您持有雙重國籍，請以主要使用的護照（通常為台灣護照）進行申請。若持有多國護照，請務必在諮詢時告知顧問確認最佳申請方案。
+                    </p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+<h3 class="font-bold text-lg text-text-main mb-3 flex items-start gap-3">
+<span class="text-primary font-display text-xl">Q.</span>
+                        護照效期需要多久？
+                    </h3>
+<p class="text-text-secondary text-sm font-light leading-relaxed pl-8 border-l-2 border-gray-100">
+                        護照效期必須在「預計離開朝鮮日期」後至少還有 <strong class="text-text-main font-medium">6 個月以上</strong> 的有效期限。請務必在申請前檢查護照到期日。
+                    </p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+<h3 class="font-bold text-lg text-text-main mb-3 flex items-start gap-3">
+<span class="text-primary font-display text-xl">Q.</span>
+                        簽證會留在護照上嗎？
+                    </h3>
+<p class="text-text-secondary text-sm font-light leading-relaxed pl-8 border-l-2 border-gray-100">
+                        不會。朝鮮旅遊簽證為<strong class="text-text-main font-medium">「另紙簽證」</strong>（一張獨立的藍色紙卡），出入境時海關會蓋章在該紙卡上，離境時將由朝方收回，不會在您的護照內頁留下任何紀錄。
+                    </p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+<h3 class="font-bold text-lg text-text-main mb-3 flex items-start gap-3">
+<span class="text-primary font-display text-xl">Q.</span>
+                        辦理時間需要多久？
+                    </h3>
+<p class="text-text-secondary text-sm font-light leading-relaxed pl-8 border-l-2 border-gray-100">
+                        一般件約需 <strong class="text-text-main font-medium">3-5 個工作日</strong>。建議您至少在出發前 10 天完成資料繳交，以免遇上當地節假日導致審核延遲。急件服務請洽詢顧問。
+                    </p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 md:col-span-2">
+<h3 class="font-bold text-lg text-text-main mb-3 flex items-start gap-3">
+<span class="text-primary font-display text-xl">Q.</span>
+                        退件原因有哪些？
+                    </h3>
+<p class="text-text-secondary text-sm font-light leading-relaxed pl-8 border-l-2 border-gray-100">
+                        常見原因包括：照片規格不符（遮擋五官、背景不白）、護照掃描檔模糊不清、或特殊職業（記者、軍警）未事先申報。只要依照我們的指引準備資料，通過率接近 100%。
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-dark text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-20 z-0"></div>
+<div class="max-w-[1000px] mx-auto px-6 relative z-10 text-center">
+<h2 class="font-display text-3xl md:text-5xl font-bold mb-6">開啟您的朝鮮之旅</h2>
+<p class="text-gray-400 font-light text-lg mb-12 max-w-2xl mx-auto">
+                我們的團隊隨時準備為您服務。無論是簽證疑問、行程規劃或是特殊需求，歡迎透過以下方式與我們聯繫，即時獲得解答。
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+<button class="flex items-center justify-center gap-4 bg-line-green text-white py-5 px-8 rounded-lg font-bold hover:brightness-110 transition-all shadow-lg hover:shadow-green-500/30 group">
+<span class="bg-white text-line-green p-1 rounded-sm">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8 3.582-8 8-8zm0 2c-3.314 0-6 2.686-6 6 0 1.837.848 3.477 2.164 4.605l-.547 1.808 2.213-1.018C6.678 13.824 7.322 14 8 14c3.314 0 6-2.686 6-6s-2.686-6-6-6z"></path></svg>
+</span>
+<span class="text-lg whitespace-nowrap">加入 LINE 官方帳號</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all">arrow_forward</span>
+</button>
+<button class="flex items-center justify-center gap-4 bg-wechat-green text-white py-5 px-8 rounded-lg font-bold hover:brightness-110 transition-all shadow-lg hover:shadow-green-500/30 group">
+<span class="bg-white text-wechat-green p-1 rounded-sm">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 4.42 3.58 8 8 8s8-3.58 8-8c0-4.42-3.58-8-8-8zm4.5 11.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zm-3 0c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zm4.5-5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zm-3 0c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5z"></path></svg>
+</span>
+<span class="text-lg whitespace-nowrap">加入 WeChat 官方帳號</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all">arrow_forward</span>
+</button>
+</div>
+<p class="mt-8 text-xs text-gray-500">
+                服務時間：週一至週五 09:00 - 18:00 (GMT+8)
+            </p>
+</div>
+</section>
+</main>
+</div>
+<footer id="contact-footer" class="bg-gray-900 text-white pt-16 md:pt-24 pb-8 border-t border-gray-800 mt-auto">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="material-symbols-outlined text-3xl text-primary">flight_takeoff</span>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold tracking-widest">朝鮮假期</span>
+                        <span class="text-[10px] text-gray-400 tracking-wider uppercase">Air Koryo Taiwan Agent</span>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 font-light">
+                    高麗航空台灣總代理，專注於朝鮮旅遊二十餘年。致力於提供最專業、安全、深度的旅遊體驗。
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <span class="font-bold text-xs">FB</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <span class="font-bold text-xs">IG</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                        <span class="font-bold text-xs">LINE</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-6 tracking-widest border-b border-gray-700 pb-2 inline-block">關於我們</h4>
+                <ul class="space-y-4 text-sm text-gray-400 font-light">
+                    <li><a href="about.html" class="hover:text-white transition-colors">品牌故事</a></li>
+                    <li><a href="itinerary.html" class="hover:text-white transition-colors">精選行程</a></li>
+                    <li><a href="visa.html" class="hover:text-white transition-colors">簽證辦理</a></li>
+                    <li><a href="metro.html" class="hover:text-white transition-colors">平壤地鐵特別企劃</a></li>
+                </ul>
+            </div>
+            <div class="lg:col-span-2">
+                <h4 class="text-lg font-bold mb-6 tracking-widest border-b border-gray-700 pb-2 inline-block">聯絡與代理資訊</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm text-gray-400 font-light">
+                    <div class="flex flex-col gap-2">
+                        <span class="text-white font-medium">台北總公司</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">location_on</span> 台北市中山區南京東路</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span> (02) 2515-8500</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-white font-medium">高雄分公司</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">location_on</span> 高雄市前金區中正四路</span>
+                        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span> (07) 215-6788</span>
+                    </div>
+                    <div class="flex flex-col gap-2 border-t pt-6 sm:border-t-0 sm:pt-0 sm:border-l sm:border-gray-800 sm:pl-6">
+                        <span class="text-white font-medium">指定代理商</span>
+                        <ul class="space-y-1 text-xs">
+                            <li>東南旅遊</li>
+                            <li>雄獅旅遊</li>
+                            <li>可樂旅遊</li>
+                            <li>鳳凰旅遊</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-gray-500 font-light tracking-wide">
+                © 2024 Air Koryo Taiwan Agent. All rights reserved. 交觀甲第0000號 品保北0000號
+            </p>
+            <div class="flex gap-6 text-xs text-gray-500">
+                <a href="#" class="hover:text-white transition-colors">網站地圖</a>
+                <a href="#" class="hover:text-white transition-colors">免責聲明</a>
+                <a href="#" class="hover:text-white transition-colors">隱私權政策</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating LINE Button -->
+<a href="https://line.me/R/ti/p/@000qngjp?oat_content=url&amp;ts=11192309" target="_blank" class="hidden md:flex fixed bottom-10 right-10 z-50 bg-[#06C755] hover:bg-emerald-600 text-white px-6 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all items-center gap-3 animate-bounce">
+    <i class="fa-brands fa-line text-3xl"></i>
+    <span class="text-lg tracking-widest">專人諮詢</span>
+</a>
+
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>朝鮮假期 - 首頁</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body
+    class="bg-stone-50 text-gray-800 antialiased overflow-x-hidden selection:bg-primary selection:text-white flex flex-col min-h-screen">
+
+    <!-- Mobile Menu Toggle & Overlay -->
+    <input class="peer hidden" id="mobile-menu-toggle" type="checkbox" />
+    <div class="fixed inset-0 bg-black/50 z-40 hidden peer-checked:block lg:hidden transition-opacity"></div>
+    <div
+        class="fixed top-0 right-0 w-[70%] h-full bg-white z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 lg:hidden shadow-2xl flex flex-col p-6 overflow-y-auto">
+        <div class="flex justify-end mb-8">
+            <label class="cursor-pointer p-2 rounded-full hover:bg-gray-100" for="mobile-menu-toggle">
+                <span class="material-symbols-outlined text-3xl text-gray-800">close</span>
+            </label>
+        </div>
+        <nav class="flex flex-col gap-6 text-lg font-medium text-gray-700">
+            <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="index.html">首頁</a>
+            <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="about.html">關於朝鮮</a>
+            <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="nature.html">自然人文</a>
+            <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="landmarks.html">經典地標</a>
+            <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors"
+                href="experience.html">深度體驗</a>
+            <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="itinerary.html">行程攻略</a>
+            <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="visa.html">簽證資訊</a>
+            <a class="border-b border-gray-100 pb-2 hover:text-primary transition-colors" href="metro.html">平壤地鐵</a>
+        </nav>
+        <div class="mt-auto pt-8 border-t border-gray-200">
+            <div class="flex flex-col gap-2 text-sm text-gray-500">
+                <span>台北總代理</span>
+                <span>(02) 2515-8500</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header
+        class="w-full z-30 bg-white/95 backdrop-blur-sm border-b border-stone-200 transition-all duration-300 sticky top-0">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-4 group cursor-pointer">
+                    <div
+                        class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white shrink-0 shadow-sm group-hover:bg-primary-dark transition-colors duration-500">
+                        <span class="material-symbols-outlined text-2xl">flight_takeoff</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="text-lg md:text-xl font-bold tracking-widest text-gray-900 leading-none group-hover:text-primary transition-colors">朝鮮假期</span>
+                        <span class="text-[10px] md:text-xs text-gray-500 tracking-wider uppercase mt-1">Air Koryo
+                            Taiwan Agent</span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-6 xl:gap-8">
+                    <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full"
+                        href="index.html">首頁</a>
+                    <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full"
+                        href="about.html">關於朝鮮</a>
+                    <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full"
+                        href="nature.html">自然人文</a>
+                    <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full"
+                        href="landmarks.html">經典地標</a>
+                    <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full"
+                        href="experience.html">深度體驗</a>
+                    <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full"
+                        href="itinerary.html">行程攻略</a>
+                    <a class="text-sm font-medium tracking-widest hover:text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-[2px] after:bg-primary after:transition-all hover:after:w-full"
+                        href="visa.html">簽證資訊</a>
+                </nav>
+
+                <div class="lg:hidden">
+                    <label class="cursor-pointer p-2 rounded-md hover:bg-gray-100 flex items-center justify-center"
+                        for="mobile-menu-toggle">
+                        <span class="material-symbols-outlined text-3xl text-gray-800">menu</span>
+                    </label>
+                </div>
+                <div class="hidden lg:block">
+                    <a href="https://line.me/R/ti/p/@000qngjp?oat_content=url&amp;ts=11192309" target="_blank"
+                        class="bg-gray-900 text-white px-6 py-2 text-sm tracking-widest hover:bg-primary transition-colors duration-300 rounded shadow-lg flex items-center gap-2">
+                        <i class="fa-brands fa-line text-lg"></i> 立即預訂
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="flex-grow flex flex-col w-full relative">
+        <main class="pt-4">
+            <section class="relative h-[85vh] md:h-[90vh] w-full overflow-hidden">
+                <div class="absolute inset-0 bg-gray-900/30 z-10"></div>
+                <img alt="Mount Kumgang Landscape"
+                    class="w-full h-full object-cover object-center scale-105 animate-[pulse_10s_ease-in-out_infinite] transform transition-transform duration-[20000ms] hover:scale-110"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKHJox4-g02W7I7fKj5kE5MOO8V43sYPI6VMen8bf9FskWh279hDag_A8QCpQqUvptnXVvNCjzME_nkf7kq1zK79Rbfzcjhneh2vjKO4wq7AU1JGk4JvlOcPO1fapX_4Rp8rP0ZTjQHb7Qbk8SfDAUMYRBQg4sc69l_i6Ddxdtl7MWQR7aSgjJEqAnGo5rLfKUzhFsEyqDD_mP-uQe8fiIu3oGkNLCgfQUfnaeBV5FwojhI6OnOmIXpKF5SySzt-6Bd1vl3hhB6R8" />
+                <div class="absolute inset-0 z-20 flex items-center justify-center">
+                    <div class="text-center text-white px-6 max-w-4xl mx-auto">
+                        <p class="text-sm md:text-base tracking-[0.4em] mb-4 md:mb-6 uppercase opacity-90">Discover the
+                            Mysteries of North Korea</p>
+                        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 tracking-wide leading-tight">
+                            秘境朝鮮 <br class="block md:hidden" /> 絕美風光
+                        </h1>
+                        <div class="w-16 md:w-24 h-[1px] bg-white mx-auto mb-6 md:mb-8"></div>
+                        <p
+                            class="text-base md:text-xl font-light tracking-wider mb-8 md:mb-10 opacity-90 max-w-2xl mx-auto leading-relaxed">
+                            高麗航空台灣總代理，為您揭開神秘面紗。<br class="hidden md:block" />
+                            從金剛山的壯麗到平壤的現代風貌，體驗獨一無二的文化旅程。
+                        </p>
+                        <a class="inline-block border border-white px-8 md:px-10 py-3 md:py-4 text-sm tracking-[0.2em] hover:bg-white hover:text-gray-900 transition-all duration-300"
+                            href="#tours">
+                            探索行程
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center animate-bounce">
+                    <span class="text-white text-[10px] tracking-widest mb-2 uppercase">Scroll</span>
+                    <span class="material-symbols-outlined text-white text-2xl">keyboard_arrow_down</span>
+                </div>
+            </section>
+            <section class="py-16 md:py-24 px-6 md:px-8 bg-white">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2
+                        class="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 tracking-widest relative inline-block">
+                        朝鮮旅遊專家
+                        <span
+                            class="absolute -bottom-3 left-1/2 w-12 h-[2px] bg-[var(--primary-blue)] transform -translate-x-1/2"></span>
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 text-left leading-loose text-gray-600 font-light">
+                        <p>
+                            我們是高麗航空在台灣的正式總代理，擁有超過二十年的操作經驗。不僅提供最直接、最安全的航班安排，更深入了解朝鮮當地的文化與風俗，為旅客量身打造最道地的深度體驗。
+                        </p>
+                        <p>
+                            打破外界的刻板印象，帶您親眼見證這片土地的真實面貌。從簽證辦理到行程規劃，我們提供一站式的專業服務，讓您的探索之旅無後顧之憂，盡情享受北緯38度的獨特魅力。
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="py-16 md:py-24 bg-stone-50 px-4 md:px-8" id="tours">
+                <div class="max-w-[1400px] mx-auto">
+                    <div class="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16 px-2">
+                        <div>
+                            <span
+                                class="text-[var(--primary-blue)] font-bold tracking-widest text-sm uppercase block mb-2">Destinations</span>
+                            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-wide">精選景點</h2>
+                        </div>
+                        <a class="hidden md:flex items-center gap-2 text-sm tracking-widest text-gray-600 hover:text-[var(--primary-blue)] transition-colors mt-4 md:mt-0"
+                            href="itinerary.html">
+                            查看全部行程 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                        <div tabindex="0" onclick="void(0)" style="-webkit-tap-highlight-color: transparent;"
+                            class="group relative block overflow-hidden h-[400px] md:h-[500px] cursor-pointer bg-gray-100">
+                            <img alt="Pyongyang City"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuARtCeKbnvTLwpquvaunZloPleuouQZb76s1w5YP9ndomg0FCWDOEPWnv0b8IU6z50kBxSmOS3_CgfnfeSa9Qh98xkZI--vT-AWasSJ02aRJZE20rELMLl7uXLo0Mrp4U6GLOkvTshnOdTwm5hJQrWkfQ0G5P1ZcqyjfD1kuypE7AqVFkFAYfYIO_2XzQAjhF8m9GobHk-FzqnUch8nXR1s6_DY1p-8S0-0RLZsnyXPmLXZDRnNBcE2wz6LXnqSL55GDzOSMO2gkZU" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+                            </div>
+                            <div class="absolute bottom-0 left-0 p-6 md:p-8 w-full">
+                                <span class="text-xs text-white/80 tracking-widest uppercase mb-2 block">Capital
+                                    City</span>
+                                <h3 class="text-2xl text-white font-bold mb-3 tracking-wider">平壤風情</h3>
+                                <p
+                                    class="text-white/70 text-sm font-light leading-relaxed line-clamp-2 mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    體驗首都的現代化建設與歷史遺跡，參觀主體思想塔與金日成廣場，感受不一樣的都市氛圍。
+                                </p>
+                                <span
+                                    class="inline-flex items-center text-white text-xs tracking-widest border-b border-white pb-1 group-hover:text-[var(--primary-blue)] group-hover:border-[var(--primary-blue)] transition-colors">
+                                    了解更多
+                                </span>
+                            </div>
+                        </div>
+                        <div tabindex="0" onclick="void(0)" style="-webkit-tap-highlight-color: transparent;"
+                            class="group relative block overflow-hidden h-[400px] md:h-[500px] cursor-pointer bg-gray-100 lg:col-span-2">
+                            <img alt="Mount Paektu"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9a2KLaL2a__kEkq9hW_qQyX2DPxTv77YdBwdKAGjZ3ZDEFVs185p0DVqvXA9pVHo5-025k23_b92n6hTmp3FnWtBQMn3eN-nbyw-1DXXc81mGoJ_Hlc2YZrDiQi23Gbd3vM8henjg5NhY4IuDIP4KNMHGQIjYtzuHG6dAMJwwWXOIUc0S0VGuyMgMlDVrCoFLYglzcc5ZgGQzHNzxnlg2NpQVpWQkaA_VVoCZCXECBy1izgxfEv0Z21FypHTjTJFGLyg8Aswk_zc" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+                            </div>
+                            <div class="absolute bottom-0 left-0 p-6 md:p-8 w-full">
+                                <span class="text-xs text-white/80 tracking-widest uppercase mb-2 block">Natural
+                                    Wonder</span>
+                                <h3 class="text-2xl text-white font-bold mb-3 tracking-wider">白頭山天池</h3>
+                                <p
+                                    class="text-white/70 text-sm font-light leading-relaxed mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 max-w-2xl">
+                                    朝鮮半島的聖山，壯麗的火山口湖泊，四季景色變幻莫測，是每位旅人心中嚮往的聖地。
+                                </p>
+                                <span
+                                    class="inline-flex items-center text-white text-xs tracking-widest border-b border-white pb-1 group-hover:text-[var(--primary-blue)] group-hover:border-[var(--primary-blue)] transition-colors">
+                                    了解更多
+                                </span>
+                            </div>
+                        </div>
+                        <div tabindex="0" onclick="void(0)" style="-webkit-tap-highlight-color: transparent;"
+                            class="group relative block overflow-hidden h-[400px] md:h-[500px] cursor-pointer bg-gray-100">
+                            <img alt="Kaesong"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8EVAVe8cG-8aKe-kZMI-Jas3jGq4MUR77r5p7n9eucWQC8k9aRWtaKdNWXxoEUXqK40KIXHBAYVudUlcQoYMO6iiK2RnSiYZrFou_COLAQmPOkn67yU2_HrKq0QHfVAig1qKN6-zC88PgIb2e6IK5XRX88t-TzGCA37blvyO6mKT0L2JXU3U8GZuOIAg_K7If8sXZx84KW5vBXQ-dVe8j24ysWZkZzRupxprflaWtk7vyjT4qMZ2738I6fUD3pMSnOW9E1sstm9Y" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+                            </div>
+                            <div class="absolute bottom-0 left-0 p-6 md:p-8 w-full">
+                                <span class="text-xs text-white/80 tracking-widest uppercase mb-2 block">History &amp;
+                                    Culture</span>
+                                <h3 class="text-2xl text-white font-bold mb-3 tracking-wider">開城古都</h3>
+                                <p
+                                    class="text-white/70 text-sm font-light leading-relaxed line-clamp-2 mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                                    高麗王朝的舊都，世界文化遺產，品嚐著名的銅碗御膳，探訪板門店的歷史現場。
+                                </p>
+                                <span
+                                    class="inline-flex items-center text-white text-xs tracking-widest border-b border-white pb-1 group-hover:text-[var(--primary-blue)] group-hover:border-[var(--primary-blue)] transition-colors">
+                                    了解更多
+                                </span>
+                            </div>
+                        </div>
+                        <div tabindex="0" onclick="void(0)" style="-webkit-tap-highlight-color: transparent;"
+                            class="group relative block overflow-hidden h-[400px] md:h-[500px] cursor-pointer bg-gray-100 lg:col-span-2">
+                            <img alt="Arirang Mass Games"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiQX-j5q_EEIPV37PhsJBTMCyE9Ypc8W5798FBbPVSbOvLd3xVOmJ9IXS0obsr3Fqx654KVuyjMzGs1ffpVbkyHZyPQUtHq7jshdY44bOgnTky5sgLplEKuv1B6ok-3C44jK62rS0eL6a6Se_tqKBTd0PHADcblDoqNKwQyjXAtFyfM_5HBC6ux4KoM_5hR_o1MAvJsKJSsgZW7R2ZDMbg-TE5zQvw3kVzi7ixRd0ni8k790Yo2Mo4TyV-yZE6Pw2V8dFUqm2tjZU" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+                            </div>
+                            <div class="absolute bottom-0 left-0 p-6 md:p-8 w-full">
+                                <span
+                                    class="text-xs text-white/80 tracking-widest uppercase mb-2 block">Performance</span>
+                                <h3 class="text-2xl text-white font-bold mb-3 tracking-wider">阿里郎大型團體操</h3>
+                                <p
+                                    class="text-white/70 text-sm font-light leading-relaxed mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 max-w-2xl">
+                                    金氏世界紀錄認證，十萬人同台演出的震撼場面，結合體操、舞蹈、音樂與背景翻板，展現極致的集體主義美學。
+                                </p>
+                                <span
+                                    class="inline-flex items-center text-white text-xs tracking-widest border-b border-white pb-1 group-hover:text-[var(--primary-blue)] group-hover:border-[var(--primary-blue)] transition-colors">
+                                    了解更多
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 md:hidden text-center">
+                        <a class="inline-flex items-center gap-2 text-sm tracking-widest text-gray-600 border border-gray-300 px-6 py-3 rounded hover:bg-white hover:border-[var(--primary-blue)] hover:text-[var(--primary-blue)] transition-all"
+                            href="itinerary.html">
+                            查看全部行程 <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="py-16 md:py-24 bg-white px-4 md:px-8">
+                <div class="max-w-[1400px] mx-auto">
+                    <div class="text-center mb-16">
+                        <span
+                            class="text-[var(--primary-blue)] font-bold tracking-widest text-xs md:text-sm uppercase block mb-3">Service
+                            Guarantee</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-wide">三大安心保證</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center md:text-left">
+                        <div
+                            class="flex flex-col items-center md:items-start p-6 rounded-lg hover:bg-stone-50 transition-colors duration-300">
+                            <div
+                                class="w-16 h-16 bg-[var(--primary-blue)]/10 text-[var(--primary-blue)] rounded-full flex items-center justify-center mb-6">
+                                <span class="material-symbols-outlined text-3xl">verified_user</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4 tracking-wider">官方總代理</h3>
+                            <p class="text-gray-500 font-light leading-relaxed text-sm md:text-base">
+                                高麗航空在台唯一指定合作夥伴，機位、簽證一手掌握，免除層層剝削，提供最優惠價格與最安全保障。
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col items-center md:items-start p-6 rounded-lg hover:bg-stone-50 transition-colors duration-300">
+                            <div
+                                class="w-16 h-16 bg-[var(--primary-blue)]/10 text-[var(--primary-blue)] rounded-full flex items-center justify-center mb-6">
+                                <span class="material-symbols-outlined text-3xl">support_agent</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4 tracking-wider">專業領隊隨行</h3>
+                            <p class="text-gray-500 font-light leading-relaxed text-sm md:text-base">
+                                資深朝鮮線領隊全程陪同，熟悉當地規範與應變處理，語言溝通無障礙，讓您玩得深入又放心。
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col items-center md:items-start p-6 rounded-lg hover:bg-stone-50 transition-colors duration-300">
+                            <div
+                                class="w-16 h-16 bg-[var(--primary-blue)]/10 text-[var(--primary-blue)] rounded-full flex items-center justify-center mb-6">
+                                <span class="material-symbols-outlined text-3xl">handshake</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4 tracking-wider">無購物壓力</h3>
+                            <p class="text-gray-500 font-light leading-relaxed text-sm md:text-base">
+                                行程透明公開，堅持高品質旅遊體驗，絕不強迫購物，把時間留給最美的風景與人文交流。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="relative py-24 md:py-32 bg-fixed bg-cover bg-center"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBcBIzSrmmr-EgUVYWtLFUCx9xrDBKWFdePmmsN4tXZ6bMASmbOd2lhjhQSMqemS_14OZUvjhwBfPUxhxNfeLpuxnzeEgHUhOK7-1iPzt2qcY-4pWZNmciSC_bIbN12E_vHcJ4G1186RpUR9AXUcNn-d4CYcUxpiea3JSAcqcJhwMuXvYOu5nsGTz3E1jgyx3e77knAPhdH-WvdNhP56ebRd6tETi70Wdfomom_Zl12DR-CcPgbp0-eiX5WOiVdoGlBSX8d-RjD-Bo');">
+                <div class="absolute inset-0 bg-gray-900/60"></div>
+                <div class="relative z-10 max-w-3xl mx-auto text-center px-6">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 md:mb-8 tracking-wide">準備好出發了嗎？</h2>
+                    <p class="text-white/90 text-base md:text-xl font-light mb-10 md:mb-12 leading-relaxed">
+                        這是一趟改變視野的旅程，一個重新定義世界的機會。<br class="hidden md:block" />立即聯繫我們，開啟您的朝鮮探索之旅。
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button
+                            class="bg-[var(--primary-red)] text-white px-8 md:px-10 py-3 md:py-4 tracking-widest hover:bg-red-800 transition-colors text-sm md:text-base w-full sm:w-auto">
+                            下載行程表
+                        </button>
+                        <button
+                            class="bg-white text-gray-900 px-8 md:px-10 py-3 md:py-4 tracking-widest hover:bg-gray-100 transition-colors text-sm md:text-base w-full sm:w-auto">
+                            線上諮詢
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer id="contact-footer" class="bg-gray-900 text-white pt-16 md:pt-24 pb-8 border-t border-gray-800 mt-auto">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="material-symbols-outlined text-3xl text-primary">flight_takeoff</span>
+                        <div class="flex flex-col">
+                            <span class="text-xl font-bold tracking-widest">朝鮮假期</span>
+                            <span class="text-[10px] text-gray-400 tracking-wider uppercase">Air Koryo Taiwan
+                                Agent</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6 font-light">
+                        高麗航空台灣總代理，專注於朝鮮旅遊二十餘年。致力於提供最專業、安全、深度的旅遊體驗。
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                            <span class="font-bold text-xs">FB</span>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                            <span class="font-bold text-xs">IG</span>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
+                            <span class="font-bold text-xs">LINE</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 tracking-widest border-b border-gray-700 pb-2 inline-block">關於我們
+                    </h4>
+                    <ul class="space-y-4 text-sm text-gray-400 font-light">
+                        <li><a href="about.html" class="hover:text-white transition-colors">品牌故事</a></li>
+                        <li><a href="itinerary.html" class="hover:text-white transition-colors">精選行程</a></li>
+                        <li><a href="visa.html" class="hover:text-white transition-colors">簽證辦理</a></li>
+                        <li><a href="metro.html" class="hover:text-white transition-colors">平壤地鐵特別企劃</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4 class="text-lg font-bold mb-6 tracking-widest border-b border-gray-700 pb-2 inline-block">
+                        聯絡與代理資訊</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm text-gray-400 font-light">
+                        <div class="flex flex-col gap-2">
+                            <span class="text-white font-medium">台北總公司</span>
+                            <span class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-base">location_on</span> 台北市中山區南京東路</span>
+                            <span class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-base">call</span> (02) 2515-8500</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <span class="text-white font-medium">高雄分公司</span>
+                            <span class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-base">location_on</span> 高雄市前金區中正四路</span>
+                            <span class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-base">call</span> (07) 215-6788</span>
+                        </div>
+                        <div
+                            class="flex flex-col gap-2 border-t pt-6 sm:border-t-0 sm:pt-0 sm:border-l sm:border-gray-800 sm:pl-6">
+                            <span class="text-white font-medium">指定代理商</span>
+                            <ul class="space-y-1 text-xs">
+                                <li>東南旅遊</li>
+                                <li>雄獅旅遊</li>
+                                <li>可樂旅遊</li>
+                                <li>鳳凰旅遊</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-gray-500 font-light tracking-wide">
+                    © 2024 Air Koryo Taiwan Agent. All rights reserved. 交觀甲第0000號 品保北0000號
+                </p>
+                <div class="flex gap-6 text-xs text-gray-500">
+                    <a href="#" class="hover:text-white transition-colors">網站地圖</a>
+                    <a href="#" class="hover:text-white transition-colors">免責聲明</a>
+                    <a href="#" class="hover:text-white transition-colors">隱私權政策</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating LINE Button -->
+    <a href="https://line.me/R/ti/p/@000qngjp?oat_content=url&amp;ts=11192309" target="_blank"
+        class="hidden md:flex fixed bottom-10 right-10 z-50 bg-[#06C755] hover:bg-emerald-600 text-white px-6 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all items-center gap-3 animate-bounce">
+        <i class="fa-brands fa-line text-3xl"></i>
+        <span class="text-lg tracking-widest">專人諮詢</span>
+    </a>
+
+</body>
+
+</html>
